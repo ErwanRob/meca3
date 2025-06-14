@@ -13,19 +13,19 @@ export interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ items, className = "" }) => {
   return (
-    <header className="fixed top-0 left-0 w-full h-16 bg-white/30 z-50 px-6 flex justify-between  items-center backdrop-filter backdrop-blur-lg border-b border-gray-200 shadow-sm">
+    <header className="fixed top-0 left-0 z-50 flex h-16 w-full items-center justify-between border-b border-gray-200 bg-white/30 px-6 shadow-sm backdrop-blur-lg backdrop-filter">
       {/* #This h1 will be logo probly be image and need react-image */}
       <h1 className="text-xl font-semibold">Content Portal</h1>
       <nav
-        className={`text-xl flex justify-between items-center h-full ${className}`}
+        className={`flex h-full items-center justify-between text-xl ${className}`}
       >
-        <ul className="flex gap-3 px-4 items-center justify-center">
+        <ul className="flex items-center justify-center gap-3 px-4">
           {items.map((item) => {
             return (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="block px-6 py-2 rounded hover:bg-gray-300 transition-colors duration-50"
+                  className="block rounded px-6 py-2 transition-colors duration-150 hover:bg-orange-100"
                 >
                   {item.title}
                 </Link>

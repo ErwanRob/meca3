@@ -3,6 +3,7 @@ import React from "react";
 const Batiment = () => {
   return (
     <div>
+      {/* # Try to make images full width and text with padding */}
       <h2>Batiment</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias

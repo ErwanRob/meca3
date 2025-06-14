@@ -7,7 +7,7 @@ import { contentHeader } from "@/data/header";
 
 export default function ContentLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="bg-slate-100 flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col bg-slate-100">
       {/* 1. Fixed header (64px tall) */}
       <Header
         items={contentHeader.map((item) => ({
@@ -20,8 +20,8 @@ export default function ContentLayout({ children }: { children: ReactNode }) {
       {/* 2. Content wrapper 
             - pt-24 = header (h-16) + gap (h-8) 
             - mb-8 = bottom gap before footer */}
-      <div className="pt-20 pb-20 mb-8 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-[auto_1fr] gap-6">
+      <div className="mb-8 px-6 pt-20 pb-20">
+        <div className="mx-auto grid max-w-6xl grid-cols-[auto_1fr] gap-6">
           {/* 4. Sticky SideMenu */}
           <SideMenu
             className=""
@@ -32,12 +32,12 @@ export default function ContentLayout({ children }: { children: ReactNode }) {
           />
 
           {/* Main flowing content */}
-          <main className="p-6 shadow-sm rounded-xl bg-white">{children}</main>
+          <main className="rounded-xl bg-white p-6 shadow-sm">{children}</main>
         </div>
       </div>
 
       {/* 5. Footer flows naturally below content */}
-      <footer className="bg-gray-800 text-white px-6 py-4 text-center">
+      <footer className="bg-gray-800 px-6 py-4 text-center text-white">
         © {new Date().getFullYear()} Your Company — All rights reserved.
       </footer>
     </div>

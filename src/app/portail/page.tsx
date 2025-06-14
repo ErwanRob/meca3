@@ -4,19 +4,19 @@ import React from "react";
 
 const Portail = () => {
   return (
-    <div className="bg-slate-50 flex flex-col justify-center items-center min-h-screen">
-      <div className="w-full flex justify-center px-2 py-4 mb-4 items-center border-b border-gray-200 shadow-sm">
-        <h1 className="text-center mx-5 text-orange-400 text-4xl font-bold">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-slate-50">
+      <div className="mb-4 flex w-full items-center justify-center border-b border-gray-200 px-2 py-4 shadow-sm">
+        <h1 className="mx-5 text-center text-4xl font-bold text-orange-400">
           {"Portail Meca3"}
         </h1>
       </div>
-      <h2 className=" text-center max-w-6xl text-2xl px-2 py-4 mb-4 ">
+      <h2 className="mb-4 max-w-6xl px-2 py-4 text-center text-2xl">
         {
           "Découvrez l'univers de la mécanique enseignée du Lycée Professionnel aux Ecoles d'Ingénieurs en feuilletant ce petit dossier...."
         }
       </h2>
 
-      <div className="max-w-6xl gap-4 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  xs:grid-cols-1 grid-cols-1 mt-5 mb-20">
+      <div className="xs:grid-cols-1 mt-5 mb-20 grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {contentCards.map((card) => (
           <Card
             key={card.href}
@@ -24,11 +24,11 @@ const Portail = () => {
             imageAlt={card.imageAlt}
             title={card.title}
             href={card.href}
-            className="w-full h-full max-w-sm bg-white "
+            className="h-full w-full max-w-sm bg-white"
           />
         ))}
       </div>
-      <footer className="w-full h-16 flex justify-center items-center bg-gray-800 text-white px-6 py-4 text-center">
+      <footer className="flex h-16 w-full items-center justify-center bg-gray-800 px-6 py-4 text-center text-white">
         © {new Date().getFullYear()} Your Company — All rights reserved.
       </footer>
     </div>

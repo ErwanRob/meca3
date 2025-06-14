@@ -20,11 +20,11 @@ const SideMenu: React.FC<SideMenuProps> = ({ items, className = "" }) => {
 
   return (
     <nav
-      /* fix for small height screen, atm cut by screen no acess to bottom links h-auto overflow-y-auto */
-      className={`h-[90vh] overflow-y-auto bg-white p-6 shadow-sm rounded-xl sticky top-20 self-start ${className}`}
+      /* fix for small height screen, atm cut by screen no acess to bottom links //h-auto overflow-y-auto */
+      className={`sticky top-20 h-[90vh] self-start overflow-y-auto rounded-xl bg-white p-6 shadow-sm ${className}`}
       style={{ width: "16rem" }} // same as w-64
     >
-      <h2 className="text-2xl font-bold mb-6">Navigation</h2>
+      <h2 className="mb-6 text-2xl font-bold">Navigation</h2>
       <ul className="space-y-2">
         {items.map((item) => {
           const isActive = pathname === item.href;
@@ -32,8 +32,8 @@ const SideMenu: React.FC<SideMenuProps> = ({ items, className = "" }) => {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`block px-4 py-1 rounded hover:bg-gray-300 transition-colors duration-20 ${
-                  isActive ? "bg-gray-300 font-semibold" : ""
+                className={`block rounded px-4 py-1 transition-colors duration-150 hover:bg-orange-100 ${
+                  isActive ? "bg-orange-100 font-semibold" : ""
                 }`}
               >
                 {item.title}
