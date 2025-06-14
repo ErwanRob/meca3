@@ -8,7 +8,7 @@ export default function Landing() {
       </h1>
 
       <Link
-        href="/home"
+        href="/portail"
         className="bg-gray-700 p-5 rounded-2xl text-3xl hover:scale-105 transition-transform duration-200"
       >
         {" "}

@@ -18,9 +18,9 @@ const Card: React.FC<CardProps> = ({
   className = "",
 }) => {
   return (
-    <Link href={href} className="block">
+    <Link href={href} className="block shadow-sm">
       <div
-        className={`flex flex-col items-center rounded-sm shadow-md overflow-hidden ${className}`}
+        className={`flex flex-col items-center rounded-sm shadow-sm overflow-hidden ${className}`}
       >
         <div className="w-full relative aspect-[4/3]">
           <Image
