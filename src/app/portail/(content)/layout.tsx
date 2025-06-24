@@ -4,6 +4,7 @@ import SideMenu from "@/components/SideMenu";
 import Header from "@/components/Header";
 import { contentCards } from "@/data/cards";
 import { contentHeader } from "@/data/header";
+import Footer from "@/components/Footer";
 
 export default function ContentLayout({ children }: { children: ReactNode }) {
   return (
@@ -20,9 +21,9 @@ export default function ContentLayout({ children }: { children: ReactNode }) {
       {/* 2. Content wrapper 
             - pt-24 = header (h-16) + gap (h-8) 
             - mb-8 = bottom gap before footer */}
-      <div className="mb-8 px-6 pt-20 pb-20">
+      <main className="mb-8 flex-1 px-6 pt-20 pb-20">
         <div className="mx-auto grid max-w-6xl grid-cols-[auto_1fr] gap-6">
-          {/* 4. Sticky SideMenu */}
+          {/* 2-1. Sticky SideMenu */}
           <SideMenu
             className=""
             items={contentCards.map((card) => ({
@@ -31,15 +32,15 @@ export default function ContentLayout({ children }: { children: ReactNode }) {
             }))}
           />
 
-          {/* Main flowing content */}
-          <main className="rounded-xl bg-white p-6 shadow-sm">{children}</main>
+          {/* 2-2 Main flowing content */}
+          <div className="flex-1 rounded-xl bg-white p-6 shadow-sm">
+            {children}
+          </div>
         </div>
-      </div>
+      </main>
 
-      {/* 5. Footer flows naturally below content */}
-      <footer className="bg-gray-800 px-6 py-4 text-center text-white">
-        © {new Date().getFullYear()} Your Company — All rights reserved.
-      </footer>
+      {/* 3. Footer pushed naturally below content thanks to flex-1 on main */}
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 export const contentHeader = [
   {
-    title: "Accueil",
+    title: "Landing Page",
     href: "/",
   },
   {
