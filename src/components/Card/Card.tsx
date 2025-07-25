@@ -18,16 +18,16 @@ const Card: React.FC<CardProps> = ({
   className = "",
 }) => {
   return (
-    <Link href={href} className="block shadow-sm">
+    <Link href={href} className="flex h-full w-full justify-center shadow-sm">
       <div
         className={`flex flex-col items-center overflow-hidden rounded-sm shadow-sm ${className}`}
       >
-        <div className="relative aspect-[4/3] w-full">
+        <div className="relative aspect-[4/3] h-full w-full">
           <Image
             src={imageSrc}
             alt={imageAlt}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, 300px"
           />
         </div>

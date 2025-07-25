@@ -1,16 +1,16 @@
 // components/ContentLayout.tsx
 import type { ReactNode } from "react";
 import SideMenu from "@/components/SideMenu";
-import Header from "@/components/Header";
-import { contentCards } from "@/data/cards";
-import { contentHeader } from "@/data/header";
 import Footer from "@/components/Footer";
+import { ContentHeader } from "@/components/Header";
+import { portailCards } from "@/data/portailCards";
+import { contentHeader } from "@/data/contentHeader";
 
 export default function ContentLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col bg-slate-100">
       {/* 1. Fixed header (64px tall) */}
-      <Header
+      <ContentHeader
         items={contentHeader.map((item) => ({
           title: item.title,
           href: item.href,
@@ -26,7 +26,7 @@ export default function ContentLayout({ children }: { children: ReactNode }) {
           {/* 2-1. Sticky SideMenu */}
           <SideMenu
             className=""
-            items={contentCards.map((card) => ({
+            items={portailCards.map((card) => ({
               title: card.title,
               href: card.href,
             }))}

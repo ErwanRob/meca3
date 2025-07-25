@@ -2,17 +2,20 @@ import React from "react";
 import Link from "next/link";
 /* import { BsChevronRight } from "react-icons/bs"; */
 
-export interface HeaderLink {
+export interface ContentHeaderLink {
   title: string; // text to display
   href: string; // href for the link
 }
 
-export interface HeaderProps {
-  items: HeaderLink[]; // array of links to display in the header
+export interface ContentHeaderProps {
+  items: ContentHeaderLink[]; // array of links to display in the header
   className?: string; // optional className for custom styles
 }
 
-const Header: React.FC<HeaderProps> = ({ items, className = "" }) => {
+const ContentHeader: React.FC<ContentHeaderProps> = ({
+  items,
+  className = "",
+}) => {
   return (
     <header className="fixed top-0 left-0 z-50 flex h-16 w-full items-center justify-between border-b border-gray-200 bg-white/30 px-6 shadow-sm backdrop-blur-lg backdrop-filter">
       {/* #This h1 will be logo probly be image and need react-image */}
@@ -38,9 +41,10 @@ const Header: React.FC<HeaderProps> = ({ items, className = "" }) => {
           })}
         </ul>
       </nav>
+      <div className="text-xl">ContentHeader</div>
       <div className="text-xl">Paramètres</div>
     </header>
   );
 };
 
-export default Header;
+export default ContentHeader;
