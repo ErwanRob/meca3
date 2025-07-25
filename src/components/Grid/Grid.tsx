@@ -18,6 +18,7 @@ const Grid: React.FC<GridProps> = ({ data, className = "" }) => {
           imageSrc={card.imageSrc}
           imageAlt={card.imageAlt}
           title={card.title}
+          level={card.level}
           href={card.href}
           className="h-full w-full max-w-sm bg-white"
         />

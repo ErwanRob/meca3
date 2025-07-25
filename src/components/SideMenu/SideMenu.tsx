@@ -34,8 +34,8 @@ const SideMenu: React.FC<SideMenuProps> = ({ items, className = "" }) => {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`flex h-8 items-center justify-between rounded px-4 py-0 transition-colors duration-150 hover:bg-orange-100 ${
-                  isActive ? "bg-orange-100 font-semibold shadow-sm" : ""
+                className={`flex h-8 items-center justify-between rounded px-4 py-0 transition-colors duration-150 hover:bg-orange-200 ${
+                  isActive ? "bg-orange-200 font-semibold shadow-sm" : ""
                 }`}
               >
                 {item.title}

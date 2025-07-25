@@ -1,5 +1,9 @@
 "use client";
 
+// TODO: Move themes and levels to a separate data file for better maintainability
+// TODO: Add an item display count for each search
+// TODO: Add a Nothing was found message when no items match the search
+
 export interface FilterProps {
   selectedThemes: string[];
   setSelectedThemes: (themes: string[]) => void;
@@ -8,8 +12,26 @@ export interface FilterProps {
   className?: string;
 }
 
-const themes = ["Tout", "Mécanique", "Informatique", "Electricité", "Bâtiment"];
-const levels = ["Tout", "Bac-Général (SI)", "Bac-Pro", "DUT", "Master"];
+const themes = [
+  "Tout",
+  "Général",
+  "Mécanique",
+  "Informatique",
+  "Electricité",
+  "Bâtiment",
+];
+const levels = [
+  "Tout",
+  "Sans Niveau",
+  "BEP-MSMA",
+  "BAC-Pro MEI",
+  "BAC-Pro MELEC",
+  "BAC-S-SI",
+  "OFEPAL",
+  "BTS-CCST",
+  "DAEU",
+  "Cycle Ingénieur",
+];
 
 const Filter: React.FC<FilterProps> = ({
   selectedThemes,
@@ -51,7 +73,7 @@ const Filter: React.FC<FilterProps> = ({
             Choisissez le thème que vous voulez explorer
           </p>
         </div>
-        <div className="flex flex-wrap gap-2 rounded-md bg-gray-100 p-1">
+        <div className="grid grid-cols-2 gap-2 rounded-md bg-gray-100 p-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {themes.map((theme) => (
             <button
               key={theme}
@@ -79,14 +101,15 @@ const Filter: React.FC<FilterProps> = ({
             Sélectionnez le niveau de difficulté
           </p>
         </div>
-        <div className="flex flex-wrap gap-2 rounded-md bg-gray-100 p-1">
+        <div className="grid grid-cols-2 gap-2 rounded-md bg-gray-100 p-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7">
           {levels.map((level) => (
             <button
               key={level}
               onClick={() =>
                 toggleSelection(level, selectedLevels, setSelectedLevels)
               }
-              className={`flex-1 rounded-md px-4 py-2 text-sm font-medium transition ${
+              // ! removed whitespace-nowrap property, might need to be added back if necessary
+              className={`flex-1 flex-wrap rounded-md px-4 py-2 text-sm font-medium transition ${
                 selectedLevels.includes(level)
                   ? "bg-orange-200 text-black shadow-sm"
                   : "text-gray-600 hover:bg-gray-200"
@@ -102,3 +125,5 @@ const Filter: React.FC<FilterProps> = ({
 };
 
 export default Filter;
+
+//flex-1 flex-wrap rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap transition

@@ -31,7 +31,7 @@ const ContentHeader: React.FC<ContentHeaderProps> = ({
                 {/* !added class for chevron */}
                 <Link
                   href={item.href}
-                  className="rounded px-6 py-2 transition-all duration-150 hover:bg-orange-100 hover:shadow-xs"
+                  className="rounded px-6 py-2 transition-all duration-150 hover:bg-orange-200 hover:shadow-xs"
                 >
                   {item.title}
                 </Link>

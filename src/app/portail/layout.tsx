@@ -15,7 +15,7 @@ export default function PortailLayout({ children }: { children: ReactNode }) {
         className=""
       />
       {/* #2. main wrapper}>*/}
-      <main className="mt-16 flex-1 sm:w-2xl md:w-3xl lg:w-5xl xl:w-6xl">
+      <main className="mt-16 flex flex-1 flex-col sm:w-2xl md:w-3xl lg:w-5xl xl:w-6xl">
         {children}
       </main>
       {/* #3. Footer flex-1 on main */}

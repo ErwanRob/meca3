@@ -8,6 +8,8 @@ const LeconPage = () => {
   const [selectedThemes, setSelectedThemes] = useState<string[]>(["Tout"]);
   const [selectedLevels, setSelectedLevels] = useState<string[]>(["Tout"]);
 
+  // TODO: Maybe add a category filter for Leçon, on top of themes. Example : Dessin, Construction, Technologie, Analyse, DAO, Mécanique, etc.
+  // For now, we will just filter by theme and level
   const filteredCards = leconCards.filter((card) => {
     const themeMatch =
       selectedThemes.includes("Tout") || selectedThemes.includes(card.theme);

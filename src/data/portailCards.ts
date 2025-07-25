@@ -10,25 +10,25 @@ export const portailCards = [
   {
     title: "TD",
     href: "/portail/td",
-    imageSrc: "/images/meca3PlaceHolder.png",
+    imageSrc: "/images/leconPlaceHolder-general.png",
     imageAlt: "Section Travaux Dirigés",
   },
   {
     title: "TP",
     href: "/portail/tp",
-    imageSrc: "/images/meca3PlaceHolder.png",
+    imageSrc: "/images/leconPlaceHolder-general.png",
     imageAlt: "Section Travaux Pratiques",
   },
   {
     title: "Dossier Technique",
     href: "/portail/dossier-technique",
-    imageSrc: "/images/meca3PlaceHolder.png",
+    imageSrc: "/images/leconPlaceHolder-general.png",
     imageAlt: "Section Dossier Technique",
   },
   {
     title: "Dossier Construction",
     href: "/portail/dossier-construction",
-    imageSrc: "/images/meca3PlaceHolder.png",
+    imageSrc: "/images/leconPlaceHolder-general.png",
     imageAlt: "Section Dossier Construction",
   },
 ];
