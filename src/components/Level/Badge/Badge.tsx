@@ -13,7 +13,7 @@ const Badge: React.FC<BadgeProps> = ({ level, subLevel, className = "" }) => {
 
   return (
     <span
-      className={`inline-block rounded-full px-3 py-1 text-xs font-semibold ${bgColor} ${textColor} ${className}`}
+      className={`inline-block rounded-xl px-2 py-1 text-xs font-semibold ${bgColor} ${textColor} ${className}`}
     >
       {subLevel ? `${level} (${subLevel})` : level}
     </span>

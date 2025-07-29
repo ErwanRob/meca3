@@ -21,7 +21,7 @@ const LevelDisplay: React.FC<LevelDisplayProps> = ({
             key={level + (subLevel ? `-${subLevel}` : "")}
             level={level}
             subLevel={subLevel}
-            className="inline-block rounded-full px-3 py-1 text-xs font-semibold"
+            className=""
           />
         );
       })}

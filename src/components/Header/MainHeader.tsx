@@ -28,7 +28,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ items, className = "" }) => {
                 {/* !added class for chevron */}
                 <Link
                   href={item.href}
-                  className="rounded px-6 py-2 transition-all duration-150 hover:bg-orange-200 hover:shadow-xs"
+                  className="rounded px-6 py-2 transition-all duration-150 hover:text-amber-500"
                 >
                   {item.title}
                 </Link>
@@ -38,8 +38,10 @@ const MainHeader: React.FC<MainHeaderProps> = ({ items, className = "" }) => {
           })}
         </ul>
       </nav>
-      <div className="text-xl">MainHeader</div>
-      <div className="text-xl">Paramètres</div>
+      <div className="flex items-center gap-4">
+        <div className="text-sm">This is the MainHeader</div>
+        <div className="text-sm">Paramètres</div>
+      </div>
     </header>
   );
 };
