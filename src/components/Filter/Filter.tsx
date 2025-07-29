@@ -22,7 +22,7 @@ const themes = [
 ];
 const levels = [
   "Tout",
-  "Sans Niveau",
+  "Tous Niveaux",
   "BEP-MSMA",
   "BAC-Pro MEI",
   "BAC-Pro MELEC",

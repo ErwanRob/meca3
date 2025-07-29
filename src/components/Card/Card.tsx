@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import LevelPin from "@/components/LevelPin";
+import LevelPin from "@/components/Level/BadgePin";
 
 export interface CardProps {
   imageSrc: string;

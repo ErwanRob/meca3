@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { leconCards } from "@/data/leconCards";
-import Grid from "@/components/Grid";
+import { leconList } from "@/data/leconList";
+import ContentList from "@/components/ContentList";
 import Filter from "@/components/Filter";
 
 const LeconPage = () => {
@@ -10,12 +10,13 @@ const LeconPage = () => {
 
   // TODO: Maybe add a category filter for Leçon, on top of themes. Example : Dessin, Construction, Technologie, Analyse, DAO, Mécanique, etc.
   // For now, we will just filter by theme and level
-  const filteredCards = leconCards.filter((card) => {
+  const filteredCards = leconList.filter((item) => {
     const themeMatch =
-      selectedThemes.includes("Tout") || selectedThemes.includes(card.theme);
+      selectedThemes.includes("Tout") || selectedThemes.includes(item.theme);
 
     const levelMatch =
-      selectedLevels.includes("Tout") || selectedLevels.includes(card.level);
+      selectedLevels.includes("Tout") ||
+      item.levels.some(({ level }) => selectedLevels.includes(level));
 
     return themeMatch && levelMatch;
   });
@@ -35,7 +36,8 @@ const LeconPage = () => {
         className=""
       />
       {/* # Try to make images full width and text with padding */}
-      <Grid data={filteredCards} className="" />
+      {/*   <Grid data={filteredCards} className="" /> */}
+      <ContentList data={filteredCards} className="" />
     </div>
   );
 };

@@ -1,4 +1,97 @@
-export const leconCards = [
+export const leconList = [
+  {
+    title: "Présentation du dessin technique",
+    theme: "Général",
+    application: "Leçon 1",
+    levels: [{ level: "BEP-MSMA", subLevel: "1ère année" }],
+    href: "/portail/lecon/1",
+  },
+  {
+    title: "Le dessin technique",
+    theme: "Général",
+    application: "Exercice normes de dessin",
+    levels: [{ level: "BEP-MSMA", subLevel: "1ère année" }],
+    href: "/portail/lecon/2",
+  },
+  {
+    title: "La projection orthogonale part1",
+    theme: "Général",
+    application: "Mirage IV, Alpine A310, Dé",
+    levels: [{ level: "BEP-MSMA", subLevel: "1ère année" }],
+    href: "/portail/lecon/3",
+  },
+  {
+    title: "La projection orthogonale part2",
+    theme: "Général",
+    application: "Synthèse",
+    levels: [{ level: "BEP-MSMA", subLevel: "1ère année" }],
+    href: "/portail/lecon/4",
+  },
+  {
+    title: "Lecture de dessin",
+    theme: "Général",
+    application: "Plot de blocage",
+    levels: [{ level: "BEP-MSMA", subLevel: "1ère année" }],
+    href: "/portail/lecon/5",
+  },
+  {
+    title: "Coupe simple",
+    theme: "Général",
+    application: "Plot de blocage",
+    levels: [{ level: "BEP-MSMA", subLevel: "1ère année" }],
+    href: "/portail/lecon/6",
+  },
+  {
+    title: "Dessin technique",
+    theme: "Général",
+    application: "Introduction aux règles de dessins (normes)",
+    levels: [{ level: "DAEU", subLevel: "" }],
+    href: "/portail/lecon/7",
+  },
+  {
+    title: "Projection orthogonale",
+    theme: "Général",
+    application: "Exercices",
+    levels: [{ level: "DAEU", subLevel: "" }],
+    href: "/portail/lecon/8",
+  },
+  {
+    title: "Projection orthogonale",
+    theme: "Général",
+    application: "Liste d’Exercices",
+    levels: [{ level: "Tous niveaux", subLevel: "" }],
+    href: "/portail/lecon/9",
+  },
+  {
+    title: "Cotation",
+    theme: "Mécanique",
+    application: "Exécution graphique d’une cotation, cote tolérancée",
+    levels: [
+      { level: "BEP-MSMA", subLevel: "1ère année" },
+      { level: "DAEU", subLevel: "" },
+    ],
+    href: "/portail/lecon/10",
+  },
+  {
+    title: "Cotation",
+    theme: "Général",
+    application: "Les Ajustements",
+    levels: [
+      { level: "BEP-MSMA", subLevel: "1ère année" },
+      { level: "DAEU", subLevel: "" },
+    ],
+    href: "/portail/lecon/11",
+  },
+  {
+    title: "Filetage",
+    theme: "Général",
+    application: "Représentation du filetage, Montage de système Vis-Écrou",
+    levels: [{ level: "BEP-MSMA", subLevel: "1ère année" }],
+    href: "/portail/lecon/12",
+  },
+];
+
+/* export const leconList = [
   {
     title: "Leçon 1",
     theme: "Mécanique",
@@ -192,3 +285,4 @@ export const leconCards = [
     imageAlt: "Image for Leçon 24",
   },
 ];
+ */

@@ -6,6 +6,7 @@ export interface LevelPinProps {
 }
 
 // TODO: Add A level converter to only display a colored dot when needed
+// ! Rework the level data structure as this one is no longer viable
 
 const LevelPin: React.FC<LevelPinProps> = ({ level, className = "" }) => {
   return (
