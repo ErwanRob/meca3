@@ -52,7 +52,7 @@ const LeconPage = () => {
             onClick={() => setGroupByCategory((prev) => !prev)}
             className="rounded-md bg-gray-200 px-4 py-2 text-sm font-medium text-black shadow hover:bg-orange-200"
           >
-            {groupByCategory ? "Vue simple" : "Regrouper par catégorie"}
+            {groupByCategory ? "Vue compacte" : "Regrouper par catégorie"}
           </button>
         </div>
       </div>

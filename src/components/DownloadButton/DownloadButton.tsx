@@ -20,7 +20,6 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({
         download={fileName}
         className={`flex h-full items-center rounded-xl p-2 ${className}`}
       >
-        {/*     <BsDownload className="text-gray-500" /> */}
         <FaDownload className="w-8" />
       </a>
     </div>
