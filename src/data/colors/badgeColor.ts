@@ -1,4 +1,4 @@
-export const badgeColors: Record<
+export const levelColors: Record<
   string,
   { textColor: string; bgColor: string }
 > = {
@@ -39,42 +39,72 @@ export const badgeColors: Record<
     textColor: "text-red-800",
     bgColor: "bg-red-100",
   },
+};
 
+export const categoryColors: Record<
+  string,
+  { textColor: string; bgColor: string }
+> = {
   // # Categories
   Dessin: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
   Construction: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
   Technologie: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
   Analyse: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
   Mécanique: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
   Informatique: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
   Electricité: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
   Bâtiment: {
     textColor: "text-white",
-    bgColor: "bg-blue-700",
+    bgColor: "bg-gray-700/90",
   },
+};
 
-  // # fallback (Red Warning/Error)
+export const statusColors: Record<
+  string,
+  { textColor: string; bgColor: string }
+> = {
+  // # Categories
+  Finished: {
+    textColor: "text-green-700",
+    bgColor: "bg-white",
+  },
+  Pending: {
+    textColor: "text-orange-600",
+    bgColor: "bg-white",
+  },
+  Unavailable: {
+    textColor: "text-red-700",
+    bgColor: "bg-white",
+  },
+  "Potential Error": {
+    textColor: "text-white",
+    bgColor: "bg-red-700",
+  },
+};
+
+// # fallback (Red Warning/Error)
+export const error: Record<string, { textColor: string; bgColor: string }> = {
   default: {
     textColor: "text-white",
     bgColor: "bg-red-600/80",

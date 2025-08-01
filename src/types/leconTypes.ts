@@ -1,4 +1,6 @@
+// ! Change status to only certain values later on
 export interface Lecon {
+  id: string;
   title: string;
   type: string;
   category: string;
@@ -7,6 +9,7 @@ export interface Lecon {
   href: string;
   links: { title: string; href: string }[];
   downloadRef: string;
+  status: string;
 }
 
 /* #if going for baseLesson with TDs tp etc

@@ -5,13 +5,16 @@ import BadgeDisplay from "@/components/Level/BadgeDisplay";
 import DownloadButton from "../DownloadButton";
 import { Lecon } from "@/types/leconTypes";
 
+// TODO look into a better solution for Badger, best be <BadgeDisplay data={levels, category, status} />
+
 export interface ListItemProps {
   data: Lecon;
   className?: string;
 }
 
 const ListItem: React.FC<ListItemProps> = ({ data, className = "" }) => {
-  const { title, application, levels, href, downloadRef, category } = data;
+  const { title, application, levels, href, downloadRef, category, status } =
+    data;
 
   return (
     <div className="flex w-full items-stretch gap-2">
@@ -27,10 +30,9 @@ const ListItem: React.FC<ListItemProps> = ({ data, className = "" }) => {
           )}
         </div>
         <div className="flex items-baseline gap-2">
-          <span className="rounded-sm bg-green-300 px-2 text-sm text-gray-800">
-            {category ? category : ""}
-          </span>
-          <BadgeDisplay data={levels} className="" />
+          <BadgeDisplay type="level" data={levels} className="" />
+          <BadgeDisplay type="category" data={[category]} className="" />
+          <BadgeDisplay type="status" data={[status]} className="" />
         </div>
       </Link>
       <DownloadButton href={downloadRef} fileName={title} className="" />
