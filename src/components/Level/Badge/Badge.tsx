@@ -1,6 +1,10 @@
 import React from "react";
 
-import { badgeColors } from "@/data/badgeColor";
+/* TODO: Refactor this component to be more reusable, meaning it could be use for Category badges aswell if need be in the futur
+ * data/colors/badgeColors already has the category colors setup
+ */
+
+import { badgeColors } from "@/data/colors/badgeColor";
 
 export interface BadgeProps {
   level: string;

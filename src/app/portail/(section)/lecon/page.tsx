@@ -1,22 +1,21 @@
 "use client";
 import React, { useState } from "react";
-import { leconList } from "@/data/leconList";
+import { leconList } from "@/data/contentData/leconList";
+import type { Lecon } from "@/types/leconTypes";
 import ContentList from "@/components/ContentList";
 import FilterMenu from "@/components/FilterMenu";
+import FilterPin from "@/components/FilterPin/FilterPin";
+import Counter from "@/components/Counter";
 
 const LeconPage = () => {
   const [groupByCategory, setGroupByCategory] = useState<boolean>(true);
-  const [showFilters, setShowFilters] = useState<boolean>(false);
-  const [selectedThemes, setSelectedThemes] = useState<string[]>(["Tout"]);
+  const [showFilters, setShowFilters] = useState<boolean>(true);
   const [selectedLevels, setSelectedLevels] = useState<string[]>(["Tout"]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([
     "Tout",
   ]);
 
-  const filteredlecons = leconList.filter((item) => {
-    const themeMatch =
-      selectedThemes.includes("Tout") || selectedThemes.includes(item.theme);
-
+  const filteredlecons: Lecon[] = leconList.filter((item) => {
     const categoryMatch =
       selectedCategories.includes("Tout") ||
       selectedCategories.includes(item.category);
@@ -25,7 +24,7 @@ const LeconPage = () => {
       selectedLevels.includes("Tout") ||
       item.levels.some(({ level }) => selectedLevels.includes(level));
 
-    return themeMatch && levelMatch && categoryMatch;
+    return levelMatch && categoryMatch;
   });
 
   return (
@@ -38,7 +37,6 @@ const LeconPage = () => {
             Bienvenue dans la section Leçon.
           </p>
         </div>
-
         <div className="flex justify-end gap-2">
           {/* # Show/Hide Filter */}
           <button
@@ -56,10 +54,9 @@ const LeconPage = () => {
           </button>
         </div>
       </div>
+      {/* # Filter Menu */}
       {showFilters && (
         <FilterMenu
-          selectedThemes={selectedThemes}
-          setSelectedThemes={setSelectedThemes}
           selectedLevels={selectedLevels}
           setSelectedLevels={setSelectedLevels}
           selectedCategories={selectedCategories}
@@ -67,7 +64,14 @@ const LeconPage = () => {
           className=""
         />
       )}
-
+      {/* # Filter Pin */}
+      <FilterPin
+        selectedLevels={selectedLevels}
+        selectedCategories={selectedCategories}
+      />
+      {/* # Dynamic Counter */}
+      <Counter data={filteredlecons} />
+      {/* # Content List */}
       <ContentList
         data={filteredlecons}
         className="flex flex-col items-center gap-2"

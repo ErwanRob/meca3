@@ -4,4 +4,8 @@ export const categories = [
   "Construction",
   "Technologie",
   "Analyse",
+  "Mécanique",
+  "Informatique",
+  "Electricité",
+  "Bâtiment",
 ];

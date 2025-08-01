@@ -1,6 +1,6 @@
 import Grid from "@/components/Grid";
 import React from "react";
-import { portailCards } from "@/data/portailCards";
+import { portailMenu } from "@/data/menuData/portailMenu";
 
 const Portail = () => {
   return (
@@ -10,7 +10,7 @@ const Portail = () => {
           "Découvrez l'univers de la mécanique enseignée du Lycée Professionnel aux Ecoles d'Ingénieurs en feuilletant ce petit dossier...."
         }
       </h2>
-      <Grid data={portailCards} className="" />
+      <Grid data={portailMenu} className="" />
     </div>
   );
 };

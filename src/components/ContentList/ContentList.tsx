@@ -1,11 +1,10 @@
 import React from "react";
 import ListItem from "@/components/ListItem";
-import { ListItemProps } from "@/components/ListItem";
-/* import { FaChevronRight } from "react-icons/fa"; */
 import { TbSquareChevronRightFilled } from "react-icons/tb";
+import { Lecon } from "@/types/leconTypes";
 
 export interface ContentListProps {
-  data: ListItemProps[];
+  data: Lecon[];
   className?: string;
   groupByCategory?: boolean;
 }
@@ -19,25 +18,15 @@ const ContentList: React.FC<ContentListProps> = ({
   if (!groupByCategory) {
     return (
       <div className={`${className}`}>
-        {data.map((listItem) => (
-          <ListItem
-            key={listItem.href}
-            title={listItem.title}
-            theme={listItem.theme}
-            category={listItem.category}
-            application={listItem.application}
-            levels={listItem.levels}
-            href={listItem.href}
-            downloadRef={listItem.downloadRef}
-            className=""
-          />
+        {data.map((lecon) => (
+          <ListItem key={lecon.href} data={lecon} className="" />
         ))}
       </div>
     );
   }
 
   // Function to group items by category
-  const groupedByCategory = data.reduce<Record<string, ListItemProps[]>>(
+  const groupedByCategory = data.reduce<Record<string, Lecon[]>>(
     (acc, item) => {
       const category = item.category || "Autres";
       if (!acc[category]) acc[category] = [];
@@ -57,18 +46,8 @@ const ContentList: React.FC<ContentListProps> = ({
             <h2 className="text-xl font-bold text-gray-700">{category}</h2>
           </div>
           <div className={`${className}`}>
-            {items.map((listItem) => (
-              <ListItem
-                key={listItem.href}
-                title={listItem.title}
-                theme={listItem.theme}
-                category={listItem.category}
-                application={listItem.application}
-                levels={listItem.levels}
-                href={listItem.href}
-                downloadRef={listItem.downloadRef}
-                className=""
-              />
+            {items.map((lecon) => (
+              <ListItem key={lecon.href} data={lecon} className="" />
             ))}
           </div>
         </div>
@@ -78,37 +57,3 @@ const ContentList: React.FC<ContentListProps> = ({
 };
 
 export default ContentList;
-
-/* 
-
-import React from "react";
-import ListItem from "@/components/ListItem";
-import { ListItemProps } from "@/components/ListItem";
-
-export interface ContentListProps {
-  data: ListItemProps[];
-  className?: string;
-}
-
-const ContentList: React.FC<ContentListProps> = ({ data, className = "" }) => {
-  return (
-    <div className={`flex flex-col items-center gap-2 ${className}`}>
-      {data.map((listItem) => (
-        <ListItem
-          key={listItem.href}
-          title={listItem.title}
-          theme={listItem.theme}
-          category={listItem.category}
-          application={listItem.application}
-          levels={listItem.levels}
-          href={listItem.href}
-          className=""
-        />
-      ))}
-    </div>
-  );
-};
-
-export default ContentList;
-
-*/

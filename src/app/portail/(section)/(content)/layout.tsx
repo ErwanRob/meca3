@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import SideMenu from "@/components/SideMenu";
 import Footer from "@/components/Footer";
 import { ContentHeader } from "@/components/Header";
-import { portailCards } from "@/data/portailCards";
+import { portailMenu } from "@/data/menuData/portailMenu";
 import { contentHeader } from "@/data/contentHeader";
 
 export default function ContentLayout({ children }: { children: ReactNode }) {
@@ -26,7 +26,7 @@ export default function ContentLayout({ children }: { children: ReactNode }) {
           {/* 2-1. Sticky SideMenu */}
           <SideMenu
             className=""
-            items={portailCards.map((card) => ({
+            items={portailMenu.map((card) => ({
               title: card.title,
               href: card.href,
             }))}
