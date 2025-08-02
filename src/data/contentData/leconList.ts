@@ -1129,7 +1129,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Cours Traction - Compression",
-    levels: [{ level: "BP MEI", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/75",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
@@ -1144,7 +1144,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Exercices Traction Compression",
-    levels: [{ level: "BP MEI", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/76",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
@@ -1159,7 +1159,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Devoir",
-    levels: [{ level: "BP MEI", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/77",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
@@ -1174,7 +1174,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Cours élève",
-    levels: [{ level: "BP MEI", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/78",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
@@ -1189,7 +1189,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Exercices",
-    levels: [{ level: "BP MEI", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/79",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
@@ -1204,7 +1204,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Devoir",
-    levels: [{ level: "BP MEI", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/80",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
