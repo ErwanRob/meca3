@@ -4,8 +4,8 @@
 // TODO: Add a Nothing was found message when no items match the search
 // TODO : Try to make this component much shorter by regrouping the filters logic
 
-import { levels } from "@/data/structureData/levelsData";
-import { categories } from "@/data/structureData/categoryData";
+import { levels } from "@/data/utilsData/levelsData";
+import { categories } from "@/data/utilsData/categoryData";
 
 export interface FilterProps {
   selectedLevels: string[];
