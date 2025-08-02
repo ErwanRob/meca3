@@ -1219,7 +1219,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Devoir de traction",
-    levels: [{ level: "BEP MEI", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/81",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
@@ -1234,7 +1234,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "Exercices 1 à 4 Devoir de torsion",
-    levels: [{ level: "BAC-Pro", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/82",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
@@ -1249,7 +1249,7 @@ export const leconList: Lecon[] = [
     type: "Cours",
     category: "Mécanique",
     application: "",
-    levels: [{ level: "BAC-Pro", subLevel: "" }],
+    levels: [{ level: "BAC-Pro MEI", subLevel: "" }],
     href: "/portail/lecon/83",
     links: [
       { title: "Voir le TD pour cette leçon", href: "/portail/td/1" },
