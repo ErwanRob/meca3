@@ -10,6 +10,7 @@ export interface Lecon {
   links: { title: string; href: string }[];
   downloadRef: string;
   status: string;
+  content: string;
 }
 
 /* #if going for baseLesson with TDs tp etc

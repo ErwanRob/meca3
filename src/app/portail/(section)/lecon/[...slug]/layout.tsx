@@ -1,15 +1,12 @@
 // components/ContentLayout.tsx
 import type { ReactNode } from "react";
 import SideMenu from "@/components/SideMenu";
-/* import Footer from "@/components/Footer"; */
-/* import { ContentHeader } from "@/components/Header"; */
-import { portailMenu } from "@/data/menuData/portailMenu";
-/* import { contentHeader } from "@/data/contentHeader"; */
 
-// ! DO NOT MODIFY THIS FILE BUT THE OTHER LAYOUT
+import { portailMenu } from "@/data/menuData/portailMenu";
+
 export default function ContentLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50">
+    <div className="flex flex-1 flex-col bg-slate-50">
       {/* 2. Content wrapper 
             - pt-24 = header (h-16) + gap (h-8) 
             - mb-8 = bottom gap before footer */}

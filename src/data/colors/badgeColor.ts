@@ -4,40 +4,40 @@ export const levelColors: Record<
 > = {
   // # Levels
   "Tous Niveaux": {
-    textColor: "text-gray-700",
     bgColor: "bg-gray-200",
+    textColor: "text-gray-700",
   },
   "BEP-MSMA": {
-    textColor: "text-blue-800",
     bgColor: "bg-blue-100",
+    textColor: "text-blue-800",
   },
   "BAC-Pro MEI": {
-    textColor: "text-purple-800",
     bgColor: "bg-purple-100",
+    textColor: "text-purple-800",
   },
   "BAC-Pro MELEC": {
-    textColor: "text-pink-800",
     bgColor: "bg-pink-100",
+    textColor: "text-pink-800",
   },
   "BAC-S-SI": {
-    textColor: "text-amber-800",
     bgColor: "bg-amber-100",
+    textColor: "text-amber-800",
   },
   OFEPAL: {
-    textColor: "text-yellow-800",
     bgColor: "bg-yellow-100",
+    textColor: "text-yellow-800",
   },
   "BTS-CCST": {
-    textColor: "text-emerald-800",
     bgColor: "bg-emerald-100",
+    textColor: "text-emerald-800",
   },
   DAEU: {
-    textColor: "text-green-800",
     bgColor: "bg-green-100",
+    textColor: "text-green-800",
   },
   "Cycle Ingénieur": {
-    textColor: "text-red-800",
     bgColor: "bg-red-100",
+    textColor: "text-red-800",
   },
 };
 
@@ -85,7 +85,7 @@ export const statusColors: Record<
   { textColor: string; bgColor: string }
 > = {
   // # Categories
-  Finished: {
+  Published: {
     textColor: "text-green-700",
     bgColor: "bg-white",
   },
