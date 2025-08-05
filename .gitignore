@@ -63,3 +63,6 @@ next-env.d.ts
 
 # Ensure public folder is tracked
 !/public
+
+# Ignore specific files : 
+src/data/contentData/Notes.ts
