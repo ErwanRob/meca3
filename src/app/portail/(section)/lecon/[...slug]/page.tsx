@@ -4,12 +4,18 @@ import { notFound } from "next/navigation";
 /* export default function LeconSlugPage ({ params}: {params: { slug: string[] }; }) { */
 // Ex: /portail/lecon/1/1.1/1.1.1
 
-const LeconSlugPage = async ({ params }: { params: { slug: string[] } }) => {
+const LeconSlugPage = async ({
+  params,
+}: {
+  params: Promise<{ slug: string[] }>;
+}) => {
   const { slug } = await params;
   const leconId = slug[0];
 
+  console.log("LeconSlugPage params:", slug);
   // Trouver la leçon principale
   const lecon = leconList.find((l) => l.id === leconId);
+  console.log("LeconSlugPage lecon:", lecon);
 
   if (!lecon) return notFound();
 
