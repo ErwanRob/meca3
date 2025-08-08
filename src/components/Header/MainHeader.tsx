@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-/* import { BsChevronRight } from "react-icons/bs"; */
 
 export interface MainHeaderLink {
   title: string; // text to display
@@ -20,19 +19,17 @@ const MainHeader: React.FC<MainHeaderProps> = ({ items, className = "" }) => {
       <nav
         className={`flex h-full items-center justify-between text-xl font-light ${className}`}
       >
-        {/* ! removed px-4 and changed gap-3 to gap-1 */}
+        {/* fix removed px-4 and changed gap-3 to gap-1 */}
         <ul className="flex items-center justify-center gap-1">
           {items.map((item) => {
             return (
               <li key={item.href} className="flex items-center">
-                {/* !added class for chevron */}
                 <Link
                   href={item.href}
                   className="rounded px-6 py-2 transition-all duration-150 hover:text-amber-500"
                 >
                   {item.title}
                 </Link>
-                {/* #<BsChevronRight className="mt-1 text-sm" /> */}
               </li>
             );
           })}

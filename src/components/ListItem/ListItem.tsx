@@ -13,13 +13,15 @@ export interface ListItemProps {
 }
 
 const ListItem: React.FC<ListItemProps> = ({ data, className = "" }) => {
-  const { title, application, levels, href, downloadRef, category, status } =
+  const { id, title, application, levels, downloadRef, category, status } =
     data;
+
+  const leconUrl = `/portail/lecon/${id}`;
 
   return (
     <div className="flex w-full items-stretch gap-2">
       <Link
-        href={href}
+        href={leconUrl}
         className={`flex w-full items-baseline justify-between rounded-xl border border-gray-200 px-4 py-2 text-gray-500 shadow-xs transition-all duration-150 hover:scale-[1.005] hover:bg-gray-100 hover:text-gray-950 ${className}`}
       >
         <div className="flex items-baseline gap-2">

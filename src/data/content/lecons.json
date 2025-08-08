@@ -1,0 +1,553 @@
+[
+  {
+    "id": "composants-standards",
+    "title": "Composants Standards",
+    "type": "Cours",
+    "category": "Mécanique",
+    "application": "Leçon 2",
+    "levels": [
+      {
+        "level": "BAC-PRO",
+        "subLevel": "Terminale"
+      }
+    ],
+    "links": [],
+    "downloadRef": "/pdf/composants.pdf",
+    "status": "Published",
+    "pageTree": {
+      "slug": "introduction",
+      "title": "Introduction aux Composants Standards",
+      "content": "Here content will be much more complicated, not just a string but it might need to be a list of lesson",
+      "children": [
+        {
+          "slug": "ecrou",
+          "title": "Écrou",
+          "content": "Les Écrous Le contenu sur les écrous...",
+          "children": [
+            {
+              "slug": "materiaux",
+              "title": "Matériaux pour les écrous",
+              "content": "Acier, Inox, Laiton..."
+            },
+            {
+              "slug": "classes-qualite",
+              "title": "Classes de qualité",
+              "content": "Classe 8, 10, 12..."
+            }
+          ]
+        },
+        {
+          "slug": "rondelles",
+          "title": "Rondelles",
+          "content": "Les Rondelles Contenu sur l'utilité des rondelles...",
+          "children": [
+            {
+              "slug": "materiaux-rondelles",
+              "title": "Matériaux pour les Rondelles",
+              "content": "Infos générales sur les matériaux...",
+              "children": [
+                {
+                  "slug": "ferreux",
+                  "title": "Matériaux ferreux",
+                  "content": "Acier, etc."
+                },
+                {
+                  "slug": "non-ferreux",
+                  "title": "Matériaux non ferreux",
+                  "content": "Cuivre, etc."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vis",
+          "title": "Vis",
+          "content": "Les Vis Le contenu sur les vis...",
+          "children": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "materiaux",
+    "title": "Les Matériaux",
+    "type": "Cours",
+    "category": "Science des Matériaux",
+    "application": "Leçon 3",
+    "levels": [
+      {
+        "level": "BTS-CPI",
+        "subLevel": "1ère année"
+      }
+    ],
+    "links": [],
+    "downloadRef": "/pdf/materiaux.pdf",
+    "status": "Published",
+    "pageTree": {
+      "slug": "introduction-materiaux",
+      "title": "Introduction aux Matériaux",
+      "content": "Présentation générale des différentes familles de matériaux et de leurs propriétés.",
+      "children": [
+        {
+          "slug": "metallique",
+          "title": "Métallique",
+          "content": "Contenu sur les matériaux métalliques.",
+          "children": [
+            {
+              "slug": "ferreux",
+              "title": "Ferreux",
+              "content": "Contenu sur les métaux ferreux.",
+              "children": [
+                {
+                  "slug": "acier",
+                  "title": "Acier",
+                  "content": "Contenu sur les aciers.",
+                  "children": [
+                    {
+                      "slug": "general",
+                      "title": "Général",
+                      "content": "Généralités sur l'acier."
+                    },
+                    {
+                      "slug": "acier-tt",
+                      "title": "Acier pour TT",
+                      "content": "Contenu sur l'acier pour traitement thermique."
+                    },
+                    {
+                      "slug": "faiblement-allies",
+                      "title": "Faiblement Alliés",
+                      "content": "Contenu sur les aciers faiblement alliés."
+                    },
+                    {
+                      "slug": "fortement-allies",
+                      "title": "Fortement Alliés",
+                      "content": "Contenu sur les aciers fortement alliés."
+                    },
+                    {
+                      "slug": "video-acier",
+                      "title": "Vidéo Acier",
+                      "content": "Vidéo de présentation sur l'acier."
+                    }
+                  ]
+                },
+                {
+                  "slug": "fonte",
+                  "title": "Fonte",
+                  "content": "Contenu sur les fontes.",
+                  "children": [
+                    {
+                      "slug": "fonte-1ere-fusion",
+                      "title": "Fonte de 1ère Fusion",
+                      "content": "Contenu sur la fonte de première fusion.",
+                      "children": [
+                        {
+                          "slug": "fonte-blanche-1",
+                          "title": "Fonte Blanche",
+                          "content": "Contenu sur la fonte blanche de première fusion."
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "fonte-2eme-fusion",
+                      "title": "Fonte de 2ème Fusion",
+                      "content": "Contenu sur la fonte de deuxième fusion.",
+                      "children": [
+                        {
+                          "slug": "fonte-mecanique",
+                          "title": "Fonte Mécanique",
+                          "content": "Contenu sur la fonte mécanique."
+                        },
+                        {
+                          "slug": "fonte-blanche-2",
+                          "title": "Fonte Blanche",
+                          "content": "Contenu sur la fonte blanche de deuxième fusion."
+                        },
+                        {
+                          "slug": "fonte-malleable",
+                          "title": "Fonte Malléable",
+                          "content": "Contenu sur la fonte malléable."
+                        },
+                        {
+                          "slug": "fonte-speciale",
+                          "title": "Fonte Spéciale",
+                          "content": "Contenu sur les fontes spéciales.",
+                          "children": [
+                            {
+                              "slug": "graphite-spheroidal",
+                              "title": "Fonte à Graphite Sphéroïdal",
+                              "content": "Contenu sur la fonte FGS."
+                            },
+                            {
+                              "slug": "graphite-lamellaire",
+                              "title": "Fonte à Graphite Lamellaire",
+                              "content": "Contenu sur la fonte FGL."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "metaux-non-ferreux",
+              "title": "Métaux non ferreux",
+              "content": "Contenu sur les métaux non ferreux.",
+              "children": [
+                {
+                  "slug": "aluminium",
+                  "title": "Aluminium",
+                  "content": "Contenu sur l'aluminium.",
+                  "children": [
+                    {
+                      "slug": "alliage-fonderie",
+                      "title": "Alliage d'aluminium par fonderie",
+                      "content": "Contenu sur les alliages de fonderie."
+                    },
+                    {
+                      "slug": "alliage-corroyage",
+                      "title": "Alliages d'aluminium de corroyage",
+                      "content": "Contenu sur les alliages de corroyage."
+                    },
+                    {
+                      "slug": "video-aluminium",
+                      "title": "Vidéo aluminium",
+                      "content": "Vidéo de présentation sur l'aluminium."
+                    }
+                  ]
+                },
+                {
+                  "slug": "cuivre",
+                  "title": "Cuivre",
+                  "content": "Contenu sur le cuivre et ses alliages.",
+                  "children": [
+                    {
+                      "slug": "laiton",
+                      "title": "Laiton",
+                      "content": "Contenu sur le laiton."
+                    },
+                    {
+                      "slug": "bronze",
+                      "title": "Bronze",
+                      "content": "Contenu sur le bronze."
+                    },
+                    {
+                      "slug": "cuproaluminium",
+                      "title": "Cuproaluminium",
+                      "content": "Contenu sur le cuproaluminium."
+                    },
+                    {
+                      "slug": "cupronickel",
+                      "title": "Cupronickel",
+                      "content": "Contenu sur le cupronickel."
+                    },
+                    {
+                      "slug": "maillechort",
+                      "title": "Maillechort",
+                      "content": "Contenu sur le maillechort."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "mineraux",
+          "title": "Minéraux",
+          "content": "Contenu sur les matériaux minéraux.",
+          "children": [
+            {
+              "slug": "fabrique",
+              "title": "Fabriqué",
+              "content": "Contenu sur les minéraux fabriqués.",
+              "children": [
+                {
+                  "slug": "beton",
+                  "title": "Béton",
+                  "content": "Contenu sur le béton.",
+                  "children": [
+                    {
+                      "slug": "arme",
+                      "title": "Armé",
+                      "content": "Contenu sur le béton armé."
+                    },
+                    {
+                      "slug": "vibre",
+                      "title": "Vibré",
+                      "content": "Contenu sur le béton vibré."
+                    },
+                    {
+                      "slug": "video-beton",
+                      "title": "Vidéo Béton",
+                      "content": "Vidéo de présentation sur le béton."
+                    }
+                  ]
+                },
+                {
+                  "slug": "brique",
+                  "title": "Brique",
+                  "content": "Contenu sur la brique."
+                }
+              ]
+            },
+            {
+              "slug": "naturel",
+              "title": "Naturel",
+              "content": "Contenu sur les minéraux naturels.",
+              "children": [
+                {
+                  "slug": "sable",
+                  "title": "Sable",
+                  "content": "Contenu sur le sable.",
+                  "children": [
+                    {
+                      "slug": "verre",
+                      "title": "Verre",
+                      "content": "Contenu sur le verre."
+                    }
+                  ]
+                },
+                {
+                  "slug": "roche",
+                  "title": "Roche",
+                  "content": "Contenu sur la roche.",
+                  "children": [
+                    {
+                      "slug": "gres",
+                      "title": "Grès",
+                      "content": "Contenu sur le grès."
+                    },
+                    {
+                      "slug": "granite",
+                      "title": "Granite",
+                      "content": "Contenu sur le granite."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "ceramique",
+              "title": "Céramique",
+              "content": "Contenu sur les céramiques.",
+              "children": [
+                {
+                  "slug": "usuelle",
+                  "title": "Usuelle",
+                  "content": "Contenu sur les céramiques usuelles.",
+                  "children": [
+                    {
+                      "slug": "terre-cuite",
+                      "title": "Terre cuite",
+                      "content": "Contenu sur la terre cuite."
+                    },
+                    {
+                      "slug": "porcelaine",
+                      "title": "Porcelaine",
+                      "content": "Contenu sur la porcelaine."
+                    },
+                    {
+                      "slug": "platre",
+                      "title": "Plâtre",
+                      "content": "Contenu sur le plâtre."
+                    },
+                    {
+                      "slug": "ciments",
+                      "title": "Ciments",
+                      "content": "Contenu sur les ciments."
+                    }
+                  ]
+                },
+                {
+                  "slug": "technique",
+                  "title": "Technique",
+                  "content": "Contenu sur les céramiques techniques.",
+                  "children": [
+                    {
+                      "slug": "structurale",
+                      "title": "Structurale",
+                      "content": "Contenu sur la céramique structurale."
+                    },
+                    {
+                      "slug": "fonctionnelle",
+                      "title": "Fonctionnelle",
+                      "content": "Contenu sur la céramique fonctionnelle."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "organique",
+          "title": "Organique",
+          "content": "Contenu sur les matériaux organiques.",
+          "children": [
+            {
+              "slug": "synthetique",
+              "title": "Synthétique",
+              "content": "Contenu sur les matériaux organiques synthétiques.",
+              "children": [
+                {
+                  "slug": "plastique",
+                  "title": "Plastique",
+                  "content": "Contenu sur les plastiques.",
+                  "children": [
+                    {
+                      "slug": "thermoplastique",
+                      "title": "Thermoplastique",
+                      "content": "Contenu sur les thermoplastiques."
+                    },
+                    {
+                      "slug": "thermodurcissable",
+                      "title": "Thermodurcissable",
+                      "content": "Contenu sur les thermodurcissables."
+                    },
+                    {
+                      "slug": "elastomere",
+                      "title": "Elastomère",
+                      "content": "Contenu sur les élastomères."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "naturel-organique",
+              "title": "Naturel",
+              "content": "Contenu sur les matériaux organiques naturels.",
+              "children": [
+                {
+                  "slug": "vegetaux",
+                  "title": "Végétaux",
+                  "content": "Contenu sur les matériaux d'origine végétale.",
+                  "children": [
+                    {
+                      "slug": "caoutchouc",
+                      "title": "Caoutchouc",
+                      "content": "Contenu sur le caoutchouc."
+                    },
+                    {
+                      "slug": "bois",
+                      "title": "Bois",
+                      "content": "Contenu sur le bois.",
+                      "children": [
+                        {
+                          "slug": "direct",
+                          "title": "Direct",
+                          "content": "Contenu sur l'utilisation directe du bois.",
+                          "children": [
+                            {
+                              "slug": "hetre",
+                              "title": "Hêtre",
+                              "content": "Contenu sur le hêtre."
+                            },
+                            {
+                              "slug": "chene",
+                              "title": "Chêne",
+                              "content": "Contenu sur le chêne."
+                            }
+                          ]
+                        },
+                        {
+                          "slug": "confection",
+                          "title": "Confection",
+                          "content": "Contenu sur les produits confectionnés à partir du bois.",
+                          "children": [
+                            {
+                              "slug": "papier",
+                              "title": "Papier",
+                              "content": "Contenu sur le papier."
+                            },
+                            {
+                              "slug": "carton",
+                              "title": "Carton",
+                              "content": "Contenu sur le carton."
+                            },
+                            {
+                              "slug": "cellulose",
+                              "title": "Cellulose",
+                              "content": "Contenu sur la cellulose."
+                            }
+                          ]
+                        },
+                        {
+                          "slug": "video-bois",
+                          "title": "Vidéo Bois",
+                          "content": "Vidéo de présentation sur le bois."
+                        }
+                      ]
+                    },
+                    {
+                      "slug": "chanvre",
+                      "title": "Chanvre",
+                      "content": "Contenu sur le chanvre."
+                    },
+                    {
+                      "slug": "coton",
+                      "title": "Coton",
+                      "content": "Contenu sur le coton."
+                    },
+                    {
+                      "slug": "laine",
+                      "title": "Laine",
+                      "content": "Contenu sur la laine."
+                    }
+                  ]
+                },
+                {
+                  "slug": "animaux",
+                  "title": "Animaux",
+                  "content": "Contenu sur les matériaux d'origine animale.",
+                  "children": [
+                    {
+                      "slug": "cuir",
+                      "title": "Cuir",
+                      "content": "Contenu sur le cuir."
+                    },
+                    {
+                      "slug": "plume",
+                      "title": "Plume",
+                      "content": "Contenu sur la plume."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "composite",
+          "title": "Composite",
+          "content": "Contenu sur les matériaux composites.",
+          "children": [
+            {
+              "slug": "matrice-metallique",
+              "title": "A matrice métallique",
+              "content": "Contenu sur les composites à matrice métallique."
+            },
+            {
+              "slug": "matrice-polymere",
+              "title": "A Matrice polymère",
+              "content": "Contenu sur les composites à matrice polymère."
+            },
+            {
+              "slug": "matrice-ceramique",
+              "title": "A matrice céramique",
+              "content": "Contenu sur les composites à matrice céramique."
+            },
+            {
+              "slug": "matrice-minerale",
+              "title": "A matrice minérale",
+              "content": "Contenu sur les composites à matrice minérale."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

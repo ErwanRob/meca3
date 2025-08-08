@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { MainHeader } from "@/components/Header";
-import { mainHeader } from "@/data/mainHeader";
+import { mainHeader } from "@/data/header/mainHeader";
 import Footer from "@/components/Footer";
 
 export default function PortailLayout({ children }: { children: ReactNode }) {

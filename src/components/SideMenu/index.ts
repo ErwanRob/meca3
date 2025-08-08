@@ -1,3 +1,2 @@
 export { default } from "./SideMenu";
-export type { SideMenuProps, SideMenuItem } from "./SideMenu";
-/* export { buildSideMenu } from "./buildSideMenu"; */
+export type { SideMenuProps } from "./SideMenu";

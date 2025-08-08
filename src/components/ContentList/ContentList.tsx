@@ -19,7 +19,7 @@ const ContentList: React.FC<ContentListProps> = ({
     return (
       <div className={`${className}`}>
         {data.map((lecon) => (
-          <ListItem key={lecon.href} data={lecon} className="" />
+          <ListItem key={lecon.id} data={lecon} className="" />
         ))}
       </div>
     );
@@ -47,7 +47,7 @@ const ContentList: React.FC<ContentListProps> = ({
           </div>
           <div className={`${className}`}>
             {items.map((lecon) => (
-              <ListItem key={lecon.href} data={lecon} className="" />
+              <ListItem key={lecon.id} data={lecon} className="" />
             ))}
           </div>
         </div>

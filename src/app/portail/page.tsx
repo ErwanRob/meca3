@@ -1,6 +1,6 @@
 import Grid from "@/components/Grid";
 import React from "react";
-import { portailMenu } from "@/data/menuData/portailMenu";
+import { portailMenu } from "@/data/portail/portailMenu";
 
 const Portail = () => {
   return (

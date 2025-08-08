@@ -1,34 +1,35 @@
-import { leconList } from "@/data/contentData/leconList";
+import { getLeconPageData } from "@/lib/data"; // Importer notre nouvelle fonction
 import { notFound } from "next/navigation";
 
-/* export default function LeconSlugPage ({ params}: {params: { slug: string[] }; }) { */
-// Ex: /portail/lecon/1/1.1/1.1.1
-
+// Note : Correction du type pour les props
 const LeconSlugPage = async ({
   params,
 }: {
   params: Promise<{ slug: string[] }>;
 }) => {
   const { slug } = await params;
-  const leconId = slug[0];
+  //Function here wont be called twice (here and in layout) thanks to useCache
+  const data = await getLeconPageData(slug);
 
-  console.log("LeconSlugPage params:", slug);
-  // Trouver la leçon principale
-  const lecon = leconList.find((l) => l.id === leconId);
-  console.log("LeconSlugPage lecon:", lecon);
+  if (!data) {
+    return notFound();
+  }
 
-  if (!lecon) return notFound();
-
-  // Si tu veux aller plus loin dans l’arborescence, tu peux parser slug.slice(1)
-  // et parcourir la structure de la leçon (voir structure ci-dessous)
+  const { currentPage } = data; // getting currentPage
 
   return (
     <div>
-      <h1>{lecon.title}</h1>
-      {/*   <p> {lecon.content}</p> */}
+      <h1 className="text-blue-500">
+        Titre de la page :{" "}
+        <span className="font-bold text-green-600">{currentPage.title}</span>
+      </h1>
 
-      {/* Affiche ici le contenu principal ou la sous-section selon le slug */}
-      {/* Tu peux aussi générer un SideMenu à partir de lecon.structure */}
+      <p className="text-blue-500">
+        Slug de la page{" "}
+        <span className="font-bold text-red-500">{currentPage.slug} </span>
+      </p>
+
+      <p>Contenu de la page : {currentPage.content}</p>
     </div>
   );
 };

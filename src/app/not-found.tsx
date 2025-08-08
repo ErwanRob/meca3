@@ -1,5 +1,5 @@
 import { MainHeader } from "@/components/Header";
-import { mainHeader } from "@/data/mainHeader";
+import { mainHeader } from "@/data/header/mainHeader";
 import Link from "next/link";
 
 const NotFound = () => {

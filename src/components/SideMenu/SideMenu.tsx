@@ -1,55 +1,37 @@
-// components/SideMenu.tsx
-"use client";
-import { BsChevronRight } from "react-icons/bs";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+// src/components/SideMenu/SideMenu.tsx
+import { LeconPageNode } from "@/types/leconTypes";
 import React from "react";
-
-export interface SideMenuItem {
-  title: string;
-  href: string;
-}
+import { SideMenuItemRenderer } from "./SideMenuItemRenderer";
 
 export interface SideMenuProps {
-  items: SideMenuItem[];
-  className?: string; // let parent inject "sticky top-24"
+  leconTitle: string;
+  basePath: string;
+  tree: LeconPageNode;
 }
 
-const SideMenu: React.FC<SideMenuProps> = ({ items, className = "" }) => {
-  const pathname = usePathname();
-
+const SideMenu: React.FC<SideMenuProps> = ({ leconTitle, basePath, tree }) => {
   return (
     <nav
-      /* fix for sm height screen 90dvh is a quick fix = not the desired look 
-        #(need h-auto AND responsive attributes) */
-      className={`sticky top-20 h-[auto] self-start overflow-y-auto rounded-xl bg-white p-6 shadow-sm ${className}`}
+      // fix for sm height screen 90dvh is a quick fix = not the desired look
+      // fix (need h-auto AND responsive attributes)
+      className="sticky top-20 h-auto max-h-[calc(100vh-6rem)] self-start overflow-y-auto rounded-xl bg-white p-3 shadow-sm"
       style={{ width: "16rem" }} // same as w-64
     >
-      <h2 className="mb-6 text-2xl font-bold">Navigation</h2>
+      <h2 className="mb-6 text-2xl font-bold">{leconTitle}</h2>
       <ul className="space-y-1">
-        {items.map((item) => {
-          const isActive = pathname === item.href;
-          return (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                className={`flex h-8 items-center justify-between rounded px-4 py-0 transition-colors duration-150 hover:bg-orange-200 ${
-                  isActive ? "bg-orange-200 font-semibold shadow-sm" : ""
-                }`}
-              >
-                {item.title}
-                <BsChevronRight
-                  className={`mt-1 h-4 text-xs ${
-                    isActive
-                      ? "rotate-90 transform transition-transform duration-150"
-                      : ""
-                  }`}
-                />
-              </Link>
-            </li>
-          );
-        })}
+        {/*On passe le noeud racine (pageTree) et le basePath (l'URL de la leçon) */}
+        {/* <SideMenuItemRenderer node={tree} basePath={basePath} level={0} /> */}
+        {tree.children &&
+          tree.children.map((childNode) => (
+            <SideMenuItemRenderer
+              key={childNode.slug}
+              node={childNode}
+              // Le basePath reste celui de la leçon, car ces enfants sont au premier niveau.
+              basePath={basePath}
+              // Ils deviennent le niveau 0 de l'affichage.
+              level={0}
+            />
+          ))}
       </ul>
     </nav>
   );
