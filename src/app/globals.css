@@ -24,3 +24,24 @@
     min-height: 100vh;
   }
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 50vh;
+    background: #ffedd5;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #fb923c;
+    border-radius: 50vh;
+    border: 1px solid #fb923c;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #f97316;
+  }
+}

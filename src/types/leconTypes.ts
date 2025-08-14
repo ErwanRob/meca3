@@ -11,6 +11,7 @@ export interface LeconPageNode {
 // interface Lecon principale
 export interface Lecon {
   id: string; // ID Unique, qui peut être le slug principal (ex: "composants-standards")
+  icon: string;
   title: string;
   type: string;
   category: string;

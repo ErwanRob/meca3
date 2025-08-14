@@ -1,39 +1,64 @@
-// src/components/SideMenu/SideMenu.tsx
-import { LeconPageNode } from "@/types/leconTypes";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { LeconPageNode } from "@/types/leconTypes";
 import { SideMenuItemRenderer } from "./SideMenuItemRenderer";
+import { SideMenuProvider } from "@/context/SideMenuContext";
+import { ExpandCollapseButtons } from "./ExpandCollapseButtons";
 
 export interface SideMenuProps {
   leconTitle: string;
+  leconIcon: string;
   basePath: string;
   tree: LeconPageNode;
+  initialOpenNodes: Set<string>;
 }
 
-const SideMenu: React.FC<SideMenuProps> = ({ leconTitle, basePath, tree }) => {
+const SideMenu: React.FC<SideMenuProps> = ({
+  leconIcon,
+  leconTitle,
+  basePath,
+  tree,
+  initialOpenNodes,
+}) => {
   return (
-    <nav
-      // fix for sm height screen 90dvh is a quick fix = not the desired look
-      // fix (need h-auto AND responsive attributes)
-      className="sticky top-20 h-auto max-h-[calc(100vh-6rem)] self-start overflow-y-auto rounded-xl bg-white p-3 shadow-sm"
-      style={{ width: "16rem" }} // same as w-64
+    <SideMenuProvider
+      tree={tree}
+      basePath={basePath}
+      initialOpenNodes={initialOpenNodes}
     >
-      <h2 className="mb-6 text-2xl font-bold">{leconTitle}</h2>
-      <ul className="space-y-1">
-        {/*On passe le noeud racine (pageTree) et le basePath (l'URL de la leçon) */}
-        {/* <SideMenuItemRenderer node={tree} basePath={basePath} level={0} /> */}
-        {tree.children &&
-          tree.children.map((childNode) => (
-            <SideMenuItemRenderer
-              key={childNode.slug}
-              node={childNode}
-              // Le basePath reste celui de la leçon, car ces enfants sont au premier niveau.
-              basePath={basePath}
-              // Ils deviennent le niveau 0 de l'affichage.
-              level={0}
-            />
-          ))}
-      </ul>
-    </nav>
+      <nav
+        // fix for sm height screen 90dvh is a quick fix = not the desired look
+        // fix (need h-auto AND responsive attributes)
+        // ! w-64 reported in parent grid
+        className="overflow- scrollbar sticky top-20 flex h-auto max-h-[calc(100vh-6rem)] flex-1 flex-col self-start overflow-y-auto rounded-xl bg-white p-3 shadow-sm"
+      >
+        <Link
+          href={basePath}
+          className="mb-6 flex items-center gap-2 text-2xl font-bold"
+        >
+          <Image
+            src={leconIcon}
+            alt={"icone de :" + leconTitle}
+            width={32}
+            height={32}
+          />
+          {leconTitle}
+        </Link>
+        <ExpandCollapseButtons />
+        <ul className="">
+          {tree.children &&
+            tree.children.map((childNode) => (
+              <SideMenuItemRenderer
+                key={childNode.slug}
+                node={childNode}
+                basePath={basePath}
+                level={0}
+              />
+            ))}
+        </ul>
+      </nav>
+    </SideMenuProvider>
   );
 };
 
