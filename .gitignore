@@ -65,6 +65,7 @@ next-env.d.ts
 !/public
 
 # Ignore specific files : 
+GEMINI.md
 
 # Ignore specific folders : 
 /Notes

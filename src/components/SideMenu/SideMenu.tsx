@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { LeconPageNode } from "@/types/leconTypes";
+import { LeconPageNode } from "@/lib/schema/lecon";
 import { SideMenuItemRenderer } from "./SideMenuItemRenderer";
 import { SideMenuProvider } from "@/context/SideMenuContext";
 import { ExpandCollapseButtons } from "./ExpandCollapseButtons";

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { LeconPageNode } from "@/types/leconTypes";
+import { LeconPageNode } from "@/lib/schema/lecon";
 import { BsChevronRight } from "react-icons/bs";
 import { useMenuItemStatus } from "@/hooks/useMenuItemStatus";
 import { MenuItemIcon } from "./SideMenuItemIcon";

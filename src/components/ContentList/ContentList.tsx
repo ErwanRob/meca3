@@ -1,7 +1,8 @@
 import React from "react";
 import ListItem from "@/components/ListItem";
 import { TbSquareChevronRightFilled } from "react-icons/tb";
-import { Lecon } from "@/types/leconTypes";
+import { Lecon } from "@/lib/schema/lecon";
+import { groupLeconsByCategory } from "@/lib/utils";
 
 export interface ContentListProps {
   data: Lecon[];
@@ -24,17 +25,7 @@ const ContentList: React.FC<ContentListProps> = ({
       </div>
     );
   }
-
-  // Function to group items by category
-  const groupedByCategory = data.reduce<Record<string, Lecon[]>>(
-    (acc, item) => {
-      const category = item.category || "Autres";
-      if (!acc[category]) acc[category] = [];
-      acc[category].push(item);
-      return acc;
-    },
-    {},
-  );
+  const groupedByCategory = groupLeconsByCategory(data);
 
   return (
     // # Grouped

@@ -1,7 +1,7 @@
-import { getLeconPageData } from "@/lib/data"; // Importer notre nouvelle fonction
+import { getLeconPageData } from "@/lib/data";
 import { notFound } from "next/navigation";
+import ContentRenderer from "@/components/ContentRenderer/ContentRenderer";
 
-// Note : Correction du type pour les props
 const LeconSlugPage = async ({
   params,
 }: {
@@ -15,7 +15,7 @@ const LeconSlugPage = async ({
     return notFound();
   }
 
-  const { currentPage } = data; // getting currentPage
+  const { currentPage } = data;
 
   return (
     <div>
@@ -29,7 +29,7 @@ const LeconSlugPage = async ({
         <span className="font-bold text-red-500">{currentPage.slug} </span>
       </p>
 
-      <p>Contenu de la page : {currentPage.content}</p>
+      <ContentRenderer blocks={currentPage.content} />
     </div>
   );
 };

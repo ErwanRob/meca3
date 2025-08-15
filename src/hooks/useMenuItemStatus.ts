@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
-import { LeconPageNode } from "@/types/leconTypes";
+import { LeconPageNode } from "@/lib/schema/lecon";
 
 export function useMenuItemStatus({
   node,

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import type { Lecon } from "@/types/leconTypes";
+import type { Lecon } from "@/lib/schema/lecon";
 import ContentList from "@/components/ContentList";
 import FilterMenu from "@/components/FilterMenu";
 import FilterPin from "@/components/FilterPin/FilterPin";

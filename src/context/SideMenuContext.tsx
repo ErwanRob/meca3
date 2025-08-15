@@ -1,6 +1,6 @@
 "use client";
-
-import { LeconPageNode } from "@/types/leconTypes";
+import { LeconPageNode } from "@/lib/schema/lecon";
+import { getExpandableNodeHrefs, setsAreEqual } from "@/lib/utils";
 import React, {
   createContext,
   useContext,
@@ -9,29 +9,6 @@ import React, {
   useEffect,
   useRef,
 } from "react";
-
-function getExpandableNodeHrefs(
-  node: LeconPageNode,
-  basePath: string,
-  paths: Set<string> = new Set(),
-): Set<string> {
-  const currentHref = `${basePath}/${node.slug}`.replace(/\/+/g, "/");
-  if (node.children && node.children.length > 0) {
-    paths.add(currentHref);
-    node.children.forEach((child) =>
-      getExpandableNodeHrefs(child, currentHref, paths),
-    );
-  }
-  return paths;
-}
-
-function setsAreEqual(setA: Set<string>, setB: Set<string>) {
-  if (setA.size !== setB.size) return false;
-  for (const item of setA) {
-    if (!setB.has(item)) return false;
-  }
-  return true;
-}
 
 interface SideMenuContextType {
   openNodes: Set<string>;

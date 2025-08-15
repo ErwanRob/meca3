@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BsChevronRight } from "react-icons/bs";
 import BadgeDisplay from "@/components/Level/BadgeDisplay";
 import DownloadButton from "../DownloadButton";
-import { Lecon } from "@/types/leconTypes";
+import { Lecon } from "@/lib/schema/lecon";
 
 // TODO look into a better solution for Badger, best be <BadgeDisplay data={levels, category, status} />
 

@@ -1,6 +1,6 @@
 import React from "react";
 import allLecons from "@/data//content/lecons.json";
-import type { Lecon } from "@/types/leconTypes";
+import type { Lecon } from "@/lib/schema/lecon";
 
 export interface CounterProps {
   data: Lecon[];

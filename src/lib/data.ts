@@ -1,11 +1,12 @@
-import { LeconPageNode } from "@/types/leconTypes";
-import allLecons from "@/data/content/lecons.json";
-import type { Lecon } from "@/types/leconTypes";
+import allLeconsData from "@/data/content/lecons.json";
+import { LeconsSchema } from "@/lib/schema/lecon"; // Zod schema
+import type { Lecon, LeconPageNode } from "@/lib/schema/lecon"; // INFERRED types
+
+const allLecons = LeconsSchema.parse(allLeconsData);
 
 export async function getAllLecons(): Promise<Lecon[]> {
   "use cache";
-  const typedLecons: Lecon[] = allLecons;
-  return typedLecons;
+  return allLecons;
 }
 
 const findPageInTree = (
@@ -24,7 +25,6 @@ const findPageInTree = (
   return findPageInTree(remainingPath, nextNode);
 };
 
-// * The new, more ergonomic way to cache the function's result with "use cache" but experimental
 export async function getLeconPageData(slug: string[]) {
   "use cache";
   if (!slug || slug.length === 0) return null;
