@@ -54,6 +54,37 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ blocks }) => {
               </ListTag>
             );
 
+          case "details":
+            return (
+              <details key={index} open={block.data.defaultOpen}>
+                <summary className="cursor-pointer font-bold">
+                  {block.data.summary}
+                </summary>
+                {/* Recursive Call! */}
+                <div className="ml-2 border-l-2 pl-4">
+                  <ContentRenderer blocks={block.data.content} />
+                </div>
+              </details>
+            );
+
+          case "grid":
+            return (
+              <div
+                key={index}
+                className="grid grid-cols-1 gap-4 md:grid-cols-2"
+              >
+                {block.data.columns.map((col, colIndex) => (
+                  <div
+                    key={colIndex}
+                    className="min-w-0 rounded-xl bg-amber-400 px-6 py-2"
+                  >
+                    {/* Recursive Call! */}
+                    <ContentRenderer blocks={col.content} />
+                  </div>
+                ))}
+              </div>
+            );
+
           default:
             // Render nothing or a placeholder for unknown block types
             return null;
