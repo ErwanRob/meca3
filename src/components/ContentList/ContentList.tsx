@@ -15,7 +15,7 @@ const ContentList: React.FC<ContentListProps> = ({
   className = "",
   groupByCategory = false,
 }) => {
-  // # Not Grouped
+  // ~ Not Grouped
   if (!groupByCategory) {
     return (
       <div className={`${className}`}>
@@ -28,7 +28,7 @@ const ContentList: React.FC<ContentListProps> = ({
   const groupedByCategory = groupLeconsByCategory(data);
 
   return (
-    // # Grouped
+    // ~ Grouped
     <div className="flex flex-col gap-6">
       {Object.entries(groupedByCategory).map(([category, items]) => (
         <div key={category} className="w-full">

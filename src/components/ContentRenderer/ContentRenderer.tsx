@@ -6,18 +6,24 @@ interface ContentRendererProps {
   blocks: ContentBlock[];
 }
 
+// TODO Make each case (block) its own component for more control & feature (see RefactorContentRenderer TODO)
+
 const ContentRenderer: React.FC<ContentRendererProps> = ({ blocks }) => {
   if (!blocks || blocks.length === 0) {
     return <p>Ce contenu nest pas encore disponible.</p>;
   }
 
   return (
-    /* TODO prose lg:prose-xl */
-    <div className="max-w-none">
+    /* feat: prose lg:prose-xl */
+    <div className="flex flex-col gap-2">
       {blocks.map((block, index) => {
         switch (block.type) {
           case "paragraph":
-            return <p key={index}>{block.data.text}</p>;
+            return (
+              <p className="" key={index}>
+                {block.data.text}
+              </p>
+            );
 
           case "subheading":
             return (
@@ -49,7 +55,9 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ blocks }) => {
             return (
               <ListTag key={index} className="list-inside list-disc pl-4">
                 {block.data.items.map((item, itemIndex) => (
-                  <li key={itemIndex}>{item}</li>
+                  <li className="" key={itemIndex}>
+                    {item}
+                  </li>
                 ))}
               </ListTag>
             );
@@ -71,12 +79,12 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ blocks }) => {
             return (
               <div
                 key={index}
-                className="grid grid-cols-1 gap-4 md:grid-cols-2"
+                className="grid grid-cols-1 gap-2 md:grid-cols-2"
               >
                 {block.data.columns.map((col, colIndex) => (
                   <div
                     key={colIndex}
-                    className="min-w-0 rounded-xl bg-amber-400 px-6 py-2"
+                    className="min-w-0 rounded-xl bg-orange-300/70 px-6 py-2"
                   >
                     {/* Recursive Call! */}
                     <ContentRenderer blocks={col.content} />

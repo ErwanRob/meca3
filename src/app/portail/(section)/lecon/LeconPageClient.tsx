@@ -7,15 +7,14 @@ import FilterPin from "@/components/FilterPin/FilterPin";
 import Counter from "@/components/Counter";
 
 export default function LeconsPageClient({ lecons }: { lecons: Lecon[] }) {
-  // # state
+  // ~ state
   const [groupByCategory, setGroupByCategory] = useState<boolean>(true);
   const [showFilters, setShowFilters] = useState<boolean>(true);
   const [selectedLevels, setSelectedLevels] = useState<string[]>(["Tout"]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([
     "Tout",
   ]);
-
-  // # filtering
+  // ~ filtering
   const filteredlecons: Lecon[] = lecons.filter((item) => {
     const categoryMatch =
       selectedCategories.includes("Tout") ||
@@ -37,14 +36,14 @@ export default function LeconsPageClient({ lecons }: { lecons: Lecon[] }) {
           </p>
         </div>
         <div className="flex justify-end gap-2">
-          {/* # Show/Hide Filter */}
+          {/* ~ Show/Hide Filter */}
           <button
             onClick={() => setShowFilters((prev) => !prev)}
             className="rounded-md bg-gray-200 px-4 py-2 text-sm font-medium text-black shadow hover:bg-orange-200"
           >
             {showFilters ? "Masquer les filtres" : "Afficher les filtres"}
           </button>
-          {/* # Display type */}
+          {/* ~ Display type */}
           <button
             onClick={() => setGroupByCategory((prev) => !prev)}
             className="rounded-md bg-gray-200 px-4 py-2 text-sm font-medium text-black shadow hover:bg-orange-200"
@@ -53,7 +52,7 @@ export default function LeconsPageClient({ lecons }: { lecons: Lecon[] }) {
           </button>
         </div>
       </div>
-      {/* # Filter Menu */}
+      {/* ~ Filter Menu */}
       {showFilters && (
         <FilterMenu
           selectedLevels={selectedLevels}
@@ -63,14 +62,14 @@ export default function LeconsPageClient({ lecons }: { lecons: Lecon[] }) {
           className=""
         />
       )}
-      {/* # Filter Pin */}
+      {/* ~ Filter Pin */}
       <FilterPin
         selectedLevels={selectedLevels}
         selectedCategories={selectedCategories}
       />
-      {/* # Dynamic Counter */}
+      {/* ~ Dynamic Counter */}
       <Counter data={filteredlecons} />
-      {/* # Content List */}
+      {/* ~ Content List */}
       <ContentList
         data={filteredlecons}
         className="flex flex-col items-center gap-2"

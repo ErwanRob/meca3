@@ -26,6 +26,56 @@
           }
         },
         {
+          "type": "grid",
+          "data": {
+            "columns": [
+              {
+                "span": 1,
+                "content": [
+                  {
+                    "type": "subheading",
+                    "data": { "text": "Better Representation" }
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                    }
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                    }
+                  }
+                ]
+              },
+              {
+                "span": 1,
+                "content": [
+                  {
+                    "type": "subheading",
+                    "data": { "text": "Key Features" }
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                    }
+                  },
+                  {
+                    "type": "list",
+                    "data": {
+                      "style": "ordered",
+                      "items": ["Feature A", "Feature B", "Feature C"]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
           "type": "image",
           "data": {
             "src": "/images/ecrou-schema.png",
@@ -118,6 +168,24 @@
                         "data": {
                           "style": "unordered",
                           "items": ["Weight: 25kg", "Max Load: 500kg"]
+                        }
+                      },
+                      {
+                        "type": "list",
+                        "data": {
+                          "style": "ordered",
+                          "items": [
+                            "Weight: 25kg",
+                            "Max Load: 500kg",
+                            "Max Load: 500kg",
+                            "Max Load: 500kg"
+                          ]
+                        }
+                      },
+                      {
+                        "type": "paragraph",
+                        "data": {
+                          "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble. Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble. Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
                         }
                       }
                     ]

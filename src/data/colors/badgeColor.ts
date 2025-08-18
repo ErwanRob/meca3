@@ -2,7 +2,7 @@ export const levelColors: Record<
   string,
   { textColor: string; bgColor: string }
 > = {
-  // # Levels
+  // ~ Levels
   "Tous Niveaux": {
     bgColor: "bg-gray-200",
     textColor: "text-gray-700",
@@ -45,7 +45,7 @@ export const categoryColors: Record<
   string,
   { textColor: string; bgColor: string }
 > = {
-  // # Categories
+  // ~ Categories
   Dessin: {
     textColor: "text-white",
     bgColor: "bg-gray-700/90",
@@ -84,7 +84,7 @@ export const statusColors: Record<
   string,
   { textColor: string; bgColor: string }
 > = {
-  // # Categories
+  // ~ Categories
   Published: {
     textColor: "text-green-700",
     bgColor: "bg-white",
@@ -103,7 +103,7 @@ export const statusColors: Record<
   },
 };
 
-// # fallback (Red Warning/Error)
+// ~ fallback (Red Warning/Error)
 export const error: Record<string, { textColor: string; bgColor: string }> = {
   default: {
     textColor: "text-white",

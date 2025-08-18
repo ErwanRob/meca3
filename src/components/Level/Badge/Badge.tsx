@@ -31,7 +31,7 @@ export type BadgeProps =
 
 const Badge: React.FC<BadgeProps> = (props) => {
   const { className = "" } = props;
-  // # Level Badge
+  // ~ Level Badge
   if (props.type === "level") {
     const { level, subLevel } = props;
     const { textColor, bgColor } = levelColors[level] || error.default;
@@ -44,7 +44,7 @@ const Badge: React.FC<BadgeProps> = (props) => {
       </span>
     );
   }
-  // # Category Badge
+  // ~ Category Badge
   if (props.type === "category") {
     const { category } = props;
     const { textColor, bgColor } = categoryColors[category] || error.default;
@@ -58,7 +58,7 @@ const Badge: React.FC<BadgeProps> = (props) => {
     );
   }
 
-  // # status Badge
+  // ~ status Badge
   if (props.type === "status") {
     const { status } = props;
     const { textColor, bgColor } = statusColors[status] || error.default;
