@@ -1,11 +1,11 @@
 import React from "react";
 
-export interface FilterPinProps {
+export interface FilterInfoTrackerProps {
   selectedLevels: string[];
   selectedCategories: string[];
 }
 
-const FilterPin: React.FC<FilterPinProps> = ({
+const FilterInfoTracker: React.FC<FilterInfoTrackerProps> = ({
   selectedLevels,
   selectedCategories,
 }) => {
@@ -34,4 +34,4 @@ const FilterPin: React.FC<FilterPinProps> = ({
   );
 };
 
-export default FilterPin;
+export default FilterInfoTracker;

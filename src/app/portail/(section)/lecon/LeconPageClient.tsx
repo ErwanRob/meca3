@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import type { Lecon } from "@/lib/schema/lecon";
 import ContentList from "@/components/ContentList";
 import FilterMenu from "@/components/FilterMenu";
-import FilterPin from "@/components/FilterPin/FilterPin";
+import FilterInfoTracker from "@/components/FilterInfoTracker/FilterInfoTracker";
 import Counter from "@/components/Counter";
 
 export default function LeconsPageClient({ lecons }: { lecons: Lecon[] }) {
@@ -63,7 +63,7 @@ export default function LeconsPageClient({ lecons }: { lecons: Lecon[] }) {
         />
       )}
       {/* ~ Filter Pin */}
-      <FilterPin
+      <FilterInfoTracker
         selectedLevels={selectedLevels}
         selectedCategories={selectedCategories}
       />
