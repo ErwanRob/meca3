@@ -33,7 +33,7 @@ export default async function LeconLayout({
             tree={lecon.pageTree}
             initialOpenNodes={initialOpenNodes}
           />
-          <div className="flex-1 rounded-xl bg-white p-4 shadow-sm">
+          <div className="flex-1 rounded-xl bg-white p-2 shadow-sm">
             {children}
           </div>
         </div>

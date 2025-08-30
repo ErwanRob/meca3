@@ -1,3 +1,4 @@
+// i. is a client component because of its parent?
 import React from "react";
 import allLecons from "@/data//content/lecons.json";
 import type { Lecon } from "@/lib/schema/lecon";

@@ -12,7 +12,9 @@ const SubheadingBlock: React.FC<SubheadingBlockProps> = ({
   className,
 }) => {
   return (
-    <h2 className={`mt-6 mb-2 px-2 text-xl font-bold ${className}`}>
+    <h2
+      className={`mt-6 mb-2 border-red-700 px-2 text-xl font-bold ${className}`}
+    >
       {data.text}
     </h2>
   );

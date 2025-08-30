@@ -1,3 +1,4 @@
+// i. is a client component because of its parent?
 import React from "react";
 import ListItem from "@/components/ListItem";
 import { TbSquareChevronRightFilled } from "react-icons/tb";

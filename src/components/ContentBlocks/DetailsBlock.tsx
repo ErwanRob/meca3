@@ -1,6 +1,9 @@
 import React from "react";
-import ContentRenderer from "@/components/ContentRenderer/ContentRenderer";
 import type { ContentBlock } from "@/lib/schema/lecon";
+import dynamic from "next/dynamic";
+const ContentRenderer = dynamic(
+  () => import("@/components/ContentRenderer/ContentRenderer"),
+);
 
 interface DetailsBlockProps {
   data: {

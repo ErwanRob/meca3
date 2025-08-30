@@ -20,8 +20,8 @@ const LeconSlugPage = async ({
   const { currentPage } = data;
 
   return (
-    // * Remove div to only return ContentRenderer for final build
-    <div>
+    // fix Remove div (the one below with relative) to only return ContentRenderer for final build
+    <div className="">
       <div className="mb-4 flex w-fit flex-col rounded-xl border-1 border-gray-300 p-2">
         <h1 className="text-xs text-blue-500">
           Titre :{" "}

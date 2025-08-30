@@ -32,7 +32,7 @@ export default function LeconsPageClient({ lecons }: { lecons: Lecon[] }) {
           <h1 className="text-4xl font-bold text-amber-500">Leçon</h1>
           <span className="text-xl text-gray-700"> &bull;</span>
           <p className="text-xl text-gray-700">
-            Bienvenue dans la section Leçon.
+            {"  Bienvenue dans la section Leçon."}
           </p>
         </div>
         <div className="flex justify-end gap-2">

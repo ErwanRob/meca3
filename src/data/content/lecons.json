@@ -20,9 +20,33 @@
       "title": "Introduction aux Composants Standards",
       "content": [
         {
+          "type": "section_fold",
+          "data": {
+            "title": "Ceci est une section pliable",
+            "defaultOpen": true,
+            "content": [
+              {
+                "type": "paragraph",
+                "data": {
+                  "content": [
+                    { "_type": "span", "text": "Contenu de la section..." }
+                  ],
+                  "markDefs": []
+                }
+              }
+            ]
+          }
+        },
+        {
           "type": "paragraph",
           "data": {
-            "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+            "content": [
+              {
+                "_type": "span",
+                "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+              }
+            ],
+            "markDefs": []
           }
         },
         {
@@ -39,13 +63,25 @@
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                      "content": [
+                        {
+                          "_type": "span",
+                          "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                        }
+                      ],
+                      "markDefs": []
                     }
                   },
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                      "content": [
+                        {
+                          "_type": "span",
+                          "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                        }
+                      ],
+                      "markDefs": []
                     }
                   }
                 ]
@@ -60,7 +96,13 @@
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                      "content": [
+                        {
+                          "_type": "span",
+                          "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                        }
+                      ],
+                      "markDefs": []
                     }
                   },
                   {
@@ -78,7 +120,7 @@
         {
           "type": "image",
           "data": {
-            "src": "/images/ecrou-schema.png",
+            "src": "/images/ecrou-schema.jpg",
             "alt": "Schéma d'un écrou hexagonal",
             "caption": "Fig. 1: Écrou H (Hexagonal)"
           }
@@ -110,13 +152,19 @@
             {
               "type": "paragraph",
               "data": {
-                "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                "content": [
+                  {
+                    "_type": "span",
+                    "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                  }
+                ],
+                "markDefs": []
               }
             },
             {
               "type": "image",
               "data": {
-                "src": "/images/ecrou-schema.png",
+                "src": "/images/ecrou-schema.jpg",
                 "alt": "Schéma d'un écrou hexagonal",
                 "caption": "Fig. 1: Écrou H (Hexagonal)"
               }
@@ -146,53 +194,7 @@
               "title": "Matériaux pour les écrous",
               "content": [
                 {
-                  "type": "paragraph",
-                  "data": {
-                    "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
-                  }
-                },
-                {
-                  "type": "details",
-                  "data": {
-                    "summary": "Technical Specifications (Click to expand)",
-                    "defaultOpen": false,
-                    "content": [
-                      {
-                        "type": "paragraph",
-                        "data": {
-                          "text": "The main chassis is made of reinforced steel."
-                        }
-                      },
-                      {
-                        "type": "list",
-                        "data": {
-                          "style": "unordered",
-                          "items": ["Weight: 25kg", "Max Load: 500kg"]
-                        }
-                      },
-                      {
-                        "type": "list",
-                        "data": {
-                          "style": "ordered",
-                          "items": [
-                            "Weight: 25kg",
-                            "Max Load: 500kg",
-                            "Max Load: 500kg",
-                            "Max Load: 500kg"
-                          ]
-                        }
-                      },
-                      {
-                        "type": "paragraph",
-                        "data": {
-                          "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble. Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble. Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "type": "grid",
+                  "type": "interactive_grid",
                   "data": {
                     "columns": [
                       {
@@ -200,14 +202,46 @@
                         "content": [
                           {
                             "type": "subheading",
-                            "data": { "text": "Visual Representation" }
+                            "data": { "text": "Visualisation Interactive" }
                           },
                           {
-                            "type": "image",
+                            "type": "paragraph",
                             "data": {
-                              "src": "/images/meca3-teacher.png",
-                              "alt": "Diagram of the assembly",
-                              "caption": "Fig 2. Assembly Diagram"
+                              "content": [
+                                {
+                                  "_type": "span",
+                                  "text": "Le visuel montre un écrou H. Passez votre souris sur "
+                                },
+                                {
+                                  "_type": "span",
+                                  "text": "l'écrou borgne",
+                                  "marks": ["show-ecrou-borgne"]
+                                },
+                                {
+                                  "_type": "span",
+                                  "text": " pour voir la différence. Pour plus d'informations, consultez la "
+                                },
+                                {
+                                  "_type": "span",
+                                  "text": "documentation complète",
+                                  "marks": ["nav-docs"]
+                                },
+                                { "_type": "span", "text": "." }
+                              ],
+                              "markDefs": [
+                                {
+                                  "_key": "show-ecrou-borgne",
+                                  "_type": "interaction",
+                                  "action": "setImage",
+                                  "targetId": "viewer-ecrou",
+                                  "payload": "/images/ecrou-borgne.jpg"
+                                },
+                                {
+                                  "_key": "nav-docs",
+                                  "_type": "link",
+                                  "href": "/portail/dossier-technique/ecrous"
+                                }
+                              ]
                             }
                           }
                         ]
@@ -216,50 +250,16 @@
                         "span": 1,
                         "content": [
                           {
-                            "type": "subheading",
-                            "data": { "text": "Key Features" }
-                          },
-                          {
-                            "type": "paragraph",
+                            "type": "image",
+                            "id": "viewer-ecrou",
                             "data": {
-                              "text": "Note the alignment of the primary gear..."
-                            }
-                          },
-                          {
-                            "type": "list",
-                            "data": {
-                              "style": "ordered",
-                              "items": ["Feature A", "Feature B", "Feature C"]
+                              "src": "/images/ecrou-schema.jpg",
+                              "alt": "Visuel d'un écrou",
+                              "caption": "Visuel interactif"
                             }
                           }
                         ]
                       }
-                    ]
-                  }
-                },
-                {
-                  "type": "image",
-                  "data": {
-                    "src": "/images/ecrou-schema.png",
-                    "alt": "Schéma d'un écrou hexagonal",
-                    "caption": "Fig. 1: Écrou H (Hexagonal)"
-                  }
-                },
-                {
-                  "type": "subheading",
-                  "data": {
-                    "text": "Types d'écrous"
-                  }
-                },
-                {
-                  "type": "list",
-                  "data": {
-                    "style": "unordered",
-                    "items": [
-                      "Écrous hexagonaux (H)",
-                      "Écrous carrés (C)",
-                      "Écrous à créneaux",
-                      "Écrous borgnes"
                     ]
                   }
                 }
@@ -272,13 +272,19 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                    "content": [
+                      {
+                        "_type": "span",
+                        "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                      }
+                    ],
+                    "markDefs": []
                   }
                 },
                 {
                   "type": "image",
                   "data": {
-                    "src": "/images/ecrou-schema.png",
+                    "src": "/images/ecrou-schema.jpg",
                     "alt": "Schéma d'un écrou hexagonal",
                     "caption": "Fig. 1: Écrou H (Hexagonal)"
                   }
@@ -312,13 +318,19 @@
             {
               "type": "paragraph",
               "data": {
-                "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                "content": [
+                  {
+                    "_type": "span",
+                    "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                  }
+                ],
+                "markDefs": []
               }
             },
             {
               "type": "image",
               "data": {
-                "src": "/images/ecrou-schema.png",
+                "src": "/images/ecrou-schema.jpg",
                 "alt": "Schéma d'un écrou hexagonal",
                 "caption": "Fig. 1: Écrou H (Hexagonal)"
               }
@@ -350,13 +362,19 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                    "content": [
+                      {
+                        "_type": "span",
+                        "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                      }
+                    ],
+                    "markDefs": []
                   }
                 },
                 {
                   "type": "image",
                   "data": {
-                    "src": "/images/ecrou-schema.png",
+                    "src": "/images/ecrou-schema.jpg",
                     "alt": "Schéma d'un écrou hexagonal",
                     "caption": "Fig. 1: Écrou H (Hexagonal)"
                   }
@@ -388,13 +406,19 @@
                     {
                       "type": "paragraph",
                       "data": {
-                        "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                        "content": [
+                          {
+                            "_type": "span",
+                            "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                          }
+                        ],
+                        "markDefs": []
                       }
                     },
                     {
                       "type": "image",
                       "data": {
-                        "src": "/images/ecrou-schema.png",
+                        "src": "/images/ecrou-schema.jpg",
                         "alt": "Schéma d'un écrou hexagonal",
                         "caption": "Fig. 1: Écrou H (Hexagonal)"
                       }
@@ -424,34 +448,111 @@
                   "title": "Matériaux non ferreux",
                   "content": [
                     {
-                      "type": "paragraph",
+                      "type": "section_fold",
                       "data": {
-                        "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                        "title": "Ceci est une section pliable",
+
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "data": {
+                              "content": [
+                                {
+                                  "_type": "span",
+                                  "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                                }
+                              ],
+                              "markDefs": []
+                            }
+                          },
+                          {
+                            "type": "grid",
+                            "data": {
+                              "columns": [
+                                {
+                                  "span": 1,
+                                  "content": [
+                                    {
+                                      "type": "subheading",
+                                      "data": {
+                                        "text": "Better Representation"
+                                      }
+                                    },
+                                    {
+                                      "type": "paragraph",
+                                      "data": {
+                                        "content": [
+                                          {
+                                            "_type": "span",
+                                            "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                                          }
+                                        ],
+                                        "markDefs": []
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "span": 1,
+                                  "content": [
+                                    {
+                                      "type": "subheading",
+                                      "data": {
+                                        "text": "Better Representation"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "image",
+                            "data": {
+                              "src": "/images/ecrou-schema.jpg",
+                              "alt": "Schéma d'un écrou hexagonal",
+                              "caption": "Fig. 1: Écrou H (Hexagonal)"
+                            }
+                          },
+                          {
+                            "type": "subheading",
+                            "data": {
+                              "text": "Types d'écrous"
+                            }
+                          },
+                          {
+                            "type": "list",
+                            "data": {
+                              "style": "unordered",
+                              "items": [
+                                "Écrous hexagonaux (H)",
+                                "Écrous carrés (C)",
+                                "Écrous à créneaux",
+                                "Écrous borgnes"
+                              ]
+                            }
+                          }
+                        ]
                       }
                     },
                     {
-                      "type": "image",
+                      "type": "section_fold",
                       "data": {
-                        "src": "/images/ecrou-schema.png",
-                        "alt": "Schéma d'un écrou hexagonal",
-                        "caption": "Fig. 1: Écrou H (Hexagonal)"
-                      }
-                    },
-                    {
-                      "type": "subheading",
-                      "data": {
-                        "text": "Types d'écrous"
-                      }
-                    },
-                    {
-                      "type": "list",
-                      "data": {
-                        "style": "unordered",
-                        "items": [
-                          "Écrous hexagonaux (H)",
-                          "Écrous carrés (C)",
-                          "Écrous à créneaux",
-                          "Écrous borgnes"
+                        "title": "Ceci est une section extensible",
+                        "defaultOpen": false,
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "data": {
+                              "content": [
+                                {
+                                  "_type": "span",
+                                  "text": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, enim optio iusto quis deserunt voluptatibus voluptatum consequatur? Minima nisi consequatur ipsa quod dignissimos animi! Optio, veniam vitae. Vel consequuntur facilis minima nihil non tenetur magnam fugit modi enim reiciendis soluta harum, inventore, temporibus aspernatur sit aliquid praesentium voluptas eaque! Tempora exercitationem debitis laboriosam blanditiis quia, nemo ducimus! Magnam incidunt tenetur in dicta dolor nulla animi est placeat rerum. In perspiciatis sapiente nobis aperiam iure, consectetur, cum corporis id quidem eaque officiis qui laboriosam dolorum quod animi pariatur! Doloribus debitis at sunt sequi, quasi repellat fugit ea, vel consequatur repudiandae distinctio dolorum voluptate? Enim modi odio porro facilis neque fuga veniam aut aperiam earum itaque? Optio aliquam voluptatem quo earum distinctio eos mollitia autem voluptates doloribus. Sunt, hic error dolores eveniet deserunt adipisci, alias eaque ratione enim rerum corporis atque, architecto qui neque reprehenderit possimus amet voluptatibus quae iure consequuntur numquam. Optio culpa fuga dolor magni, eum pariatur assumenda in atque eius non et numquam odio, itaque eveniet nihil explicabo quia excepturi amet harum quos ratione. Velit, sint ipsum impedit, repellendus dignissimos fuga, nulla consectetur necessitatibus deserunt eligendi quibusdam similique suscipit voluptate molestiae odio culpa voluptatibus. Magnam ut officia harum qui exercitationem, magni doloremque eaque aliquam corporis saepe dolores illo dicta sequi asperiores nisi rem atque ad provident adipisci pariatur deleniti sit. Sed itaque aut, perspiciatis qui asperiores harum repellat deleniti laborum excepturi. Saepe, animi! Repudiandae nemo accusantium perspiciatis repellendus aliquam. Inventore itaque deleniti sunt fuga expedita accusamus repudiandae in eius consequatur, praesentium ducimus pariatur labore cum asperiores doloribus unde corporis facilis dolore ipsa. Enim magnam, vero quam saepe exercitationem distinctio ullam? Quam, harum cum dicta labore hic aliquid ea sapiente earum iusto, at consequuntur necessitatibus fugiat blanditiis eos, totam delectus velit saepe. Maiores a at doloribus expedita esse autem dolore impedit adipisci optio hic enim, voluptatum quis ipsum, mollitia omnis, reprehenderit dolores cupiditate rerum nobis explicabo quia. Possimus voluptatem explicabo saepe, temporibus inventore aspernatur sequi esse doloribus sed expedita vero iure laboriosam consequuntur, non molestiae, magni ex iste voluptas. Voluptates error cupiditate id hic rem. Incidunt, soluta ipsum mollitia magnam consequatur eum ullam illo? Assumenda, modi. Impedit facere repellat consequuntur eligendi sint sapiente necessitatibus voluptate porro expedita excepturi eius maxime"
+                                }
+                              ],
+                              "markDefs": []
+                            }
+                          }
                         ]
                       }
                     }
@@ -468,13 +569,19 @@
             {
               "type": "paragraph",
               "data": {
-                "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                "content": [
+                  {
+                    "_type": "span",
+                    "text": "Les Écrous sont des composants essentiels en mécanique. Ils sont utilisés en conjonction avec une vis pour fixer des pièces ensemble."
+                  }
+                ],
+                "markDefs": []
               }
             },
             {
               "type": "image",
               "data": {
-                "src": "/images/ecrou-schema.png",
+                "src": "/images/ecrou-schema.jpg",
                 "alt": "Schéma d'un écrou hexagonal",
                 "caption": "Fig. 1: Écrou H (Hexagonal)"
               }

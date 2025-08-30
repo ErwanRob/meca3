@@ -7,6 +7,8 @@ import ImageBlock from "@/components/ContentBlocks/ImageBlock";
 import ListBlock from "@/components/ContentBlocks/ListBlock";
 import DetailsBlock from "@/components/ContentBlocks/DetailsBlock";
 import GridBlock from "@/components/ContentBlocks/GridBlock";
+import InteractiveGridBlock from "@/components/ContentBlocks/InteractiveGridBlock";
+import SectionFoldBlock from "../ContentBlocks/SectionFoldBlock";
 
 interface ContentRendererProps {
   blocks: ContentBlock[];
@@ -20,6 +22,8 @@ const blockComponentMap = {
   list: ListBlock,
   details: DetailsBlock,
   grid: GridBlock,
+  interactive_grid: InteractiveGridBlock,
+  section_fold: SectionFoldBlock,
 };
 
 const ContentRenderer: React.FC<ContentRendererProps> = ({ blocks }) => {
@@ -38,8 +42,9 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ blocks }) => {
         return (
           <BlockComponent
             key={index}
+            id={block.id}
             data={block.data as any}
-            className="bg-cyan-700/20"
+            className=""
           />
         );
       })}
